@@ -1,0 +1,212 @@
+Naman Jindal -> 
+    Mern -> 
+    Mongo Express React Node -> 
+    
+    Vue js
+    typescript 
+    MySql 
+    Postgress
+
+    Cloud 
+        AWS GCP 
+    
+    Infra 
+        Kubernetes 
+        Docker 
+
+
+Addressing Common Issues -> 
+    1. English vs hindi -> English -> Hindi repeatation -> 90% english 
+    2. Don't use mobile phones 
+        Addition 
+
+    3. minor topic completion -> 
+        20 mins
+        3 mini pauses -> 
+    
+    4. Delivrables from my end -> expectations from me?? 
+        A. Revise the lecture 
+        B. Share my practical expereince with each and every topic -> 
+        C. Pointing out the interview questions and important topics -> 
+            extremely important -> interviews and your coding journey 
+            3* -> interview or coding journey -> 
+        D. Going above and beyond -> 
+            Ai existance -> 
+                generic chizo -> 
+                more in depth knowledge -> offline videos -> 
+                    difficult thigns -> 
+                    beyond level -> eventual aa jayega -> 
+
+    5. Daily Doubt sessions -> pw team -> 
+        mon -fri -> 7-8pm -> 
+        Batch -> Revision -> 1-1.5 hr -> 15 mins
+
+    2 hours -> 5 star topic -> client server architecture 
+
+My expectations from you folks ->
+1. Try to attend all lectures 
+2. Don't use mobile phones
+3. Revise the lecture 
+    1.5x -> note the important points -> 
+    notes -> note the timestamp -> 
+        what is server -> 
+            15: 20 second -> 
+
+I am a web d instructor -> 
+    Management team of PW 
+
+1. Platform -> not working 
+2. PLacement -> 
+3. Customer 
+
+introductory -> 1hour
+
+2hour - 2.5 hours ->
+
+1 hour -> 10 mins ->
+
+Doubt sessions -> 7 to 8pm 
+
+offbeat -> mid -> 
+curriculum -> topics -> 
+
+Module ->
+    Intro to html -> 
+        revision -> 
+        extra chize -> 
+    
+
+1. Git -> 10 mins ->
+
+Git practical scenario -> 
+
+    Facebook -> how many engineers would be there? 
+
+3 hours -> 
+
+70K ->
+    Instagram -> 18k 
+    whatsapp 
+    Facebook
+    Adhoc 
+
+One codebase -> 18000 -> Git -> manage versioning of a code 
+helps in cross team work -> 
+Git -> 
+
+Another -> 
+History maintaience -> 
+    released feature -> buggy -> 
+        last stable version -> 
+        we can through git -> 
+
+How it does? discussion for another time -> 
+
+
+Web Development -> 
+    1. Frontend Developement 
+    2. Backend Developemnt 
+
+    Frontend -> user facing portion -> uses sessions
+
+    Frontend -> 
+        html
+        css 
+        js 
+
+        Frontend -> It is an interface through which our end users can interact with myh website
+
+    Backend -> 
+        Logic driven -> 
+        Majorly handles the data -> 
+        Generic user never sees that portion -> 
+        a generic user cannot interact with that portion 
+
+    Technologies -> criss cross you cna have various ways to learn backend -> 
+        1. Programming language
+        2. Database 
+
+        JS / Node backend developer
+        MongoDb/ Mongoose
+
+    Conclusion -> 
+        Frontend vs Backend -> 
+    
+    Frontend and Backend -> 
+        HTMl -> CSS ->GIT ->  JS -> JS DOM -> JS advance -> Tailwind -> React -> Node -> Express
+        -> Mongodb -> Mongoose -> Node advance 
+
+        Bootstrap is used much less in comparsion to the up and ocming technology like tailwind -> 
+
+        Bootstrap -> 8-9 years -> 
+        Bootstrap -> First popular -> Ui libraries 
+
+
+        JS is the most popualr -> the most hiring -> 
+
+    
+    Frontend -> 5 mins break -> Building Blocks of website
+
+    HTMl -> Strucute of website -> general placement and content putting
+
+    CSS -> Design and beautify
+
+    JS -> functioanlity, click, getting a pop up -> interactivity 
+
+
+1. Client Server Architecture -> 
+
+
+
+Airbnb.co.in -> 
+
+DNS resolution -> 
+DNS resolution algorithm -> 
+
+DNS -> Domain Name Systems -> 
+
+
+Does every DNS have every domain stored -> no -> 
+Treat it as yes -> 
+
+what is the data center ? and what is the role in client server algorith?
+
+
+Advanced ->
+
+
+Ip address -> 
+    2 types -> 
+
+    1. IPv4 address -> 192.168.1.10
+    2. IPv6 address  -> 2001:0db8:85a3:0000:0000:8a2e:0370:7334
+
+    till 2019 -> only ipv4 address existed -> 
+
+    We never anticipated at the time of creation that we can have some many website over the internet that we can 
+    run out of IPv4. 
+
+    But that thing happned
+
+    Can I run 2 websites with the same IP address? NO 
+
+
+    Web Tools -> 
+    1. Every browser has their own webtools 
+    2. Every browser webtools will not look same
+    3. Every browswer webtools will have similar functioanlity but not exact 
+
+    My recommendation:
+        A. To use chrome browser -> 
+
+    Reasons: 
+        1. It offers wide features
+        2. It sets a benchmark 
+        3. It is much less complicated and much more good looking 
+        4. I am using () -> replicate -> 
+            chrome is not best 
+            I am most comfortable with chrome -> 
+
+    Default browser setting from microsoft edge to chrome -> 
+
+    Bug Resolution and debugging -> 
