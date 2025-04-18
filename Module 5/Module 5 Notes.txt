@@ -1,0 +1,23 @@
+Notes: Module 05
+Semantic HTML: Semantic HTML properly define the purpose & meaning of the HTML Code
+	-Improve Code Readabilty
+	-Improves code maintainability
+	-This makes our website accessible
+Do to that we have to use Semantic Tags
+	-These Tags accurately describe their purpose & describe the type of there conetent
+Semantic Tag
+	-h1,h2,h3,header,footer, main, form,
+Semantic tags define the purpose why we have used the tags
+
+Non-Semantic Tags:
+	Non-Semantic Tags do not have a specific meaning aur purpose they are used to create general purpose containers for writeing content 
+	For Example
+		- Span
+		-div
+
+
+SVG
+Audio
+Vedio
+
+Speacial Character
