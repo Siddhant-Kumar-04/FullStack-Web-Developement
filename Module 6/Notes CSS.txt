@@ -1,0 +1,28 @@
+	Using CSS3
+Basic Syntax 
+	selector
+		{
+		Property 1: value 1
+		Property 1: value 1
+		}
+-Selector: Selector specifies the html element that we want to style
+-Property: its Specifies the attribute / property of html element that we want to change
+ 	Example: background-color
+		Width
+-Value : It Specifies the new value we want to assign to the property
+div{
+background-color:red;
+width:100px;
+}
+
+Adding CSS to Our Webpage
+-External CSS:It is an approach for writeing CSS rules to the HTMl Page by making a sperate CSS file . we make a sperate CSS File and the link it to the HTMl Page
+
+-inline CSS:It is the approach to add CSS directly to the 	HTMl element . to do it by using style sttribute on 	the html tag.
+	<h1 style="color:red; background-color:Yellow">	</h1>
+
+-internal CSS:This is a simple way to add CSS to our HTMl:	-To apply internal CSS we can use the style tag of 	HTML
+	<style> - Opening style Tag
+	</style> -Closing Style	Tag
+	-We add the style tag inside the <head>  tag
+	-if You want to change the font color of your 	element use the  color property
