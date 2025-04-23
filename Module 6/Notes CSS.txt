@@ -17,6 +17,7 @@ width:100px;
 
 Adding CSS to Our Webpage
 -External CSS:It is an approach for writeing CSS rules to the HTMl Page by making a sperate CSS file . we make a sperate CSS File and the link it to the HTMl Page
+-Using the link tag we can associate the css file to our html
 
 -inline CSS:It is the approach to add CSS directly to the 	HTMl element . to do it by using style sttribute on 	the html tag.
 	<h1 style="color:red; background-color:Yellow">	</h1>
