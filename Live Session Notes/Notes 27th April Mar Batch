@@ -1,0 +1,26 @@
+Rest API Methods-> and Each has a Unique functionality
+ Very High Level Discussion
+1. GET - When Client want something 
+2. POST - Then Server want Client Data
+
+3. PUT
+4. PATCH 
+5. DELTE
+
+Audio -
+    The file path of the url becomes faulty -> Very simple thing -> 
+    ARIA Tags - Explore
+
+    dedicated tags -> to address accessibilty -> ARIA -> Small stratup do not borther about this -> mega companies -> resouces
+
+ Interview Question : Difference between Semantic and Non Semantic? Why we Prefer Semantic Tag over Non - Semantic
+
+Important Things
+	- Semantic and Non - Semantic
+	- Accessbility
+	- Forms
+	- Tables
+	- What Does Attribute Do
+	- Meta Tags
+	- How to Use Web Tools/ Dev Tools
+	- Relative and Abosolute
