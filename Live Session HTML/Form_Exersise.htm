@@ -11,43 +11,45 @@
     <H1>Facebook</H1>
     <H2>Create a new Account</H2>
     <span>Its a quick easy</span><br><br>
-    <input type="text" name="Fname" placeholder="First Name">
-    <input type="text" name="Surname" id="Surname " placeholder="Surname"><br><br>
-    <label for="Dob">Date of Birth</label>
-    <label for="Date">Date</label>
-    <select name="Date" id="">
-        <option value="1">1</option>
-        <option value="1">2</option>
-    </select>
-    <label for="Month">Month</label>
-    <select name="Month" id="Month">
-        <option value="1">Jan</option>
-        <option value="1">Feb</option>
-        <option value="1">March</option>
-    </select>
-    <label for="Month">Year</label>
-    <select name="Year" id="Year">
-        <option value="1">Jan</option>
-        <option value="1">Feb</option>
-        <option value="1">March</option>
-    </select>
-    <br><br>
+    <form action="#" method="POST">
+        <input type="text" name="Fname" placeholder="First Name" required>
+        <input type="text" name="Surname" id="Surname " placeholder="Surname" required><br><br>
+        <label for="Dob">Date of Birth</label>
+        <label for="Date">Date</label>
+        <select name="Date" id="" required>
+            <option value="1">1</option>
+            <option value="1">2</option>
+        </select>
+        <label for="Month">Month</label>
+        <select name="Month" id="Month" required>
+            <option value="1">Jan</option>
+            <option value="1">Feb</option>
+            <option value="1">March</option>
+        </select>
+        <label for="Month">Year</label>
+        <select name="Year" id="Year" required>
+            <option value="1">Jan</option>
+            <option value="1">Feb</option>
+            <option value="1">March</option>
+        </select>
+        <br><br>
 
-    <label for="gender">Gender</label>
-    <label for="Female">Female
-        <input type="radio" name="gender" id="gender">
-    </label>
-    <label for="Male">Male
-        <input type="radio" name="gender" id="gender">
-    </label>
-    <label for="Custom">Custom
-        <input type="radio" name="gender" id="gender">
-    </label><br><br>
-    <input type="text" name="mobile_address" id="mobile_addres" placeholder="Mobile Number or email Address"><br><br>
-    <input type="password" name="password" id="password" placeholder="New password"><br><br>
-    <input type="submit" value="Signup"><br>
-    <a href="#">Already Have an Account</a>
-
+        <label for="gender">Gender</label>
+        <label for="Female">Female
+            <input type="radio" name="gender" id="gender" value="Femal" required>
+        </label>
+        <label for="Male">Male
+            <input type="radio" name="gender" id="gender" value="Male" required>
+        </label>
+        <label for="Custom">Custom
+            <input type="radio" name="gender" id="gender" value="Custom" required>
+        </label><br><br>
+        <input type="text" name="mobile_address" id="mobile_addres" placeholder="Mobile Number or email Address"
+            required><br><br>
+        <input type="password" name="password" id="password" placeholder="New password" required><br><br>
+        <input type="submit" value="Signup"><br>
+        <a href="#">Already Have an Account</a>
+    </form>
 </body>
 
 </html>

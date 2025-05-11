@@ -1,0 +1,11 @@
+Rest API Methods-> and Each has a Unique functionality
+ Very High Level Discussion
+1. GET - When Client want something 
+2. POST - Then Server want Client Data
+
+3. PUT
+4. PATCH 
+5. DELTE
+
+Audio -
+    The file path of the url becomes faulty -> Very simple thing -> 
