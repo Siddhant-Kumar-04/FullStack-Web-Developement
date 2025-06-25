@@ -1,0 +1,27 @@
+h1{
+    color:blue;
+    background-color:yellow;
+}
+div{
+    background-color: lightgray;
+    font-size: 20px;
+}
+#maintext
+{
+    border:2px solid black;
+    color: aquamarine;
+    background-color: blue
+    ;
+}
+.divgroup
+{
+    border: 1px solid black;
+    background-color: lightblue;
+    font-size: 18px;
+    padding: 10px;
+}
+*{
+    letter-spacing: 2px;
+    color:rbg(121,3,6);
+    background-color: rgb(193, 116, 0);
+}
