@@ -1,8 +1,20 @@
 :root{
-    --teal:#031636;
+    --teal:#031636; /*CSS Variable*/
+    --cobalt:#033649; /*CSS Variable*/
+    --turquoise:#066464
+    --beige:#CEB280; /*CSS Variable*/
+    --gold:#EADDCC; /*CSS Variable*/
 }
 
 body{
+    margin:0;
+    padding:0;
     background-color: var(--teal);
     color:white;
+}
+
+#MyName{
+display: block;
+color:var(--gold);
+font-size: 30px;
 }
