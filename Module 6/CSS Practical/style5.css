@@ -1,0 +1,8 @@
+:root{
+    --teal:#031636;
+}
+
+body{
+    background-color: var(--teal);
+    color:white;
+}
