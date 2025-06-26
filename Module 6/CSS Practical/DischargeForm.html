@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --primary-color: #4A90E2;
+            --secondary-color: #7B61FF;
+            --accent-color: #F5A623;
+            --light-bg: #F0F4F8;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--accent-color);
+            margin: auto;
+            padding: auto;
+
+
+        }
+
+        .MainForm {
+            background-color: var(--light-bg);
+            max-width: 700px;
+            margin: 100px auto;
+            padding: 60px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 5px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+
+        .Heading {
+            text-align: center;
+            margin-bottom: 10px;
+            background-color: rgb(194, 232, 237);
+            padding: 2px;
+            border-radius: 20px;
+        }
+
+        .formElement {
+            margin-bottom: 15px;
+        }
+
+        input[type="text"],
+        input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid var(--primary-color);
+            border-radius: 10px;
+            background-color: #eaf3fc;
+            color: var(--primary-color);
+
+        }
+
+        label {
+            display: block;
+            color: var(--primary-color);
+            font-weight: bold;
+            margin-bottom: 10px;
+
+        }
+
+        textarea {
+
+            width: 51.2em;
+            height: 200px;
+            padding: 20px;
+            border: 2px solid var(--primary-color);
+            border-radius: 10px;
+
+            background-color: var(--light-bg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="MainForm">
+        <h1>AvionHealth</h1>
+        <div class="Heading">
+            <h2>Patient Discharge Form</h2>
+        </div>
+        <form action="">
+            <div class="formElement">
+                <label for="patientName">Patient Name:</label>
+                <input type="text" id="patientName" name="patientName" placeholder="Patient Name" required>
+            </div>
+            <div class="formElement">
+                <label for="patientId">Patient ID:</label>
+                <input type="text" id="patientId" name="patientId" placeholder="Patient ID" required>
+            </div>
+            <div class="formElement">
+                <label for="reasonForAdmit">Reason for Admission</label>
+                <input type="text" name="reasonForAdmit" id="reasonForAdmit" placeholder="Reason for Admission"
+                    required>
+            </div>
+            <div class="formElement">
+                <label for="dischargeDate">Diagnosis at Admittance</label>
+                <input type="date" id="dischargeDate" name="dischargeDate" placeholder="Diagnosis at Admittance"
+                    required>
+            </div>
+            <div class="formElement">
+                <label for="TreatmentTaken">Prescription</label>
+                <textarea name="" id="TreatmentTaken"></textarea>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
