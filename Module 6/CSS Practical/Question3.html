@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Styled HTML Form</title>
+    <style>
+        :root {
+            --primary-color: #4A90E2;
+            --secondary-color: #7B61FF;
+            --accent-color: #F5A623;
+            --light-bg: #F0F4F8;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--light-bg);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .form-container {
+            background-color: white;
+            padding: 30px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .form-container h2 {
+            color: var(--primary-color);
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: var(--text-color);
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            background-color: #eaf3fc;
+            color: var(--text-color);
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .form-section.opacity {
+            background-color: var(--secondary-color);
+            padding: 20px;
+            border-radius: 8px;
+            color: white;
+            opacity: 0.85;
+        }
+
+        .form-group.inline {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form-group.inline label {
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #d48d1f;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h2>Registration Form</h2>
+        <form>
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com">
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Create Password</label>
+                <input type="password" id="password" name="password">
+            </div>
+
+            <div class="form-section opacity">
+                <h3>Preferences</h3>
+                <div class="form-group">
+                    <label for="color">Favorite Color</label>
+                    <select id="color" name="color">
+                        <option value="blue">Blue</option>
+                        <option value="purple">Purple</option>
+                        <option value="orange">Orange</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Subscribe to:</label>
+                    <label><input type="checkbox" name="subscribe" value="news"> Newsletter</label>
+                    <label><input type="checkbox" name="subscribe" value="updates"> Updates</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="bio">Short Bio</label>
+                <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..."></textarea>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

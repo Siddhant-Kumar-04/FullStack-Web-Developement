@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BEM Styled Paragraphs</title>
+    <style>
+        .paragraph-section__paragraph--intro {
+            font-size: 18px;
+            color: navy;
+            font-weight: bold;
+            background-color: #e6f0ff;
+            padding: 10px;
+        }
+
+        .paragraph-section__paragraph--info {
+            font-size: 16px;
+            color: darkgreen;
+            background-color: #eaffea;
+            padding: 10px;
+        }
+
+        .paragraph-section__paragraph--warning {
+            font-size: 16px;
+            color: #a94442;
+            background-color: #f2dede;
+            border-left: 4px solid red;
+            padding: 10px;
+        }
+
+        .paragraph-section__paragraph--note {
+            font-size: 14px;
+            color: #31708f;
+            background-color: #d9edf7;
+            padding: 10px;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Paragraph Styling using BEM</h1>
+
+    <p class="paragraph-section__paragraph--intro">
+        This is the introduction paragraph. It provides a summary of the content.
+    </p>
+
+    <p class="paragraph-section__paragraph--info">
+        This paragraph contains informational content to help the reader understand the topic.
+    </p>
+
+    <p class="paragraph-section__paragraph--warning">
+        Warning: This is a warning message, highlighting something critical or urgent.
+    </p>
+
+    <p class="paragraph-section__paragraph--note">
+        Note: This paragraph contains additional side information or tips.
+    </p>
+
+</body>
+
+</html>
