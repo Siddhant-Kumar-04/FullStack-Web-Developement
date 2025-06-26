@@ -1,0 +1,16 @@
+body{
+    background-color: Red;
+    width:30px;;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.Box-Model{
+    margin:30px;
+    padding:10px;
+    border: 10px solid black;
+    border-radius: 10px;
+    width: 30px;
+    text-align: center;
+    background-color: Blue; /* This colors both content and padding area */
+}

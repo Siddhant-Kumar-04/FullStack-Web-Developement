@@ -20,8 +20,17 @@ font-size: 30px;
 }
 
 #expList{
-    margin:0;
-    padding:0;
-    list-style-type:none;
+   /* margin: 0px ;
+    padding:0px;
+    background-color: black;
+    width:150px;
+    border: 20px solid var(--gold);
+    list-style-type:none;*/
+    border:10px solid var(--gold);
+    padding:20px;
+    margin:30px;
+    width:300px;
+    box-sizing: border-box;
+
 
 }
