@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Form</title>
+
+    <style>
+        :root {
+            --primary-color: #4A90E2;
+            --secondary-color: #7B61FF;
+            --accent-color: #F5A623;
+            --light-bg: #F0F4F8;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--light-bg);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .mainBackground {
+            background-color: white;
+            padding: 30px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            background-color: #eaf3fc;
+            color: var(--primary-color);
+        }
+
+        button[type="submit"] {
+            width: 30%;
+            color: var(--light-bg);
+            margin: 20px auto;
+            padding: 10px;
+            border-radius: 10px;
+            border-color: var(--light-bg);
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: var(--accent-color);
+        }
+
+        .submit-button {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainBackground">
+        <h1>Registration form</h1>
+        <form action="/submit" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="formgroup">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="formgroup">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="submit-button">
+                <button type="submit">Submit</button>
+            </div>
+</body>
+
+</html>
