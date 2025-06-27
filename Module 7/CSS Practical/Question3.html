@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --primary-color: #1b68cc;
+            --secondary-color: #f0f0f0;
+            ;
+        }
+
+        body {
+            margin: auto;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--secondary-color);
+        }
+
+        .navBar {
+            width: 100%;
+            height: 60px;
+            padding: 0px;
+            display: flex;
+            justify-items: space-between;
+            background-color: var(--primary-color)
+        }
+
+        .navBar ul {
+            list-style-type: none;
+            padding: 10px;
+            justify-content: space-between;
+            margin: 0;
+            padding: 20px;
+
+
+
+        }
+
+        .navBar ul li {
+            display: inline;
+            padding: 30px;
+            color: var(--secondary-color);
+            margin: 0;
+
+
+
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--secondary-color);
+        }
+
+        .border1 {
+            border: 2px dotted var(--secondary-color);
+            padding: 2px 2px;
+        }
+
+        .border2 {
+            border: 2px solid var(--secondary-color);
+            padding: 2px 2px;
+        }
+
+        .border3 {
+            border: 2px double var(--secondary-color);
+            padding: 2px 2px;
+        }
+
+        .border4 {
+            border: 2px dashed var(--secondary-color);
+            padding: 2px 2px;
+        }
+
+        .border5 {
+            border: 2px groove var(--secondary-color);
+            padding: 2px 2px;
+        }
+
+        .border6 {
+            border: 2px ridge var(--secondary-color);
+            padding: 2px 2px;
+        }
+
+        .border7 {
+            border: 2px inset var(--secondary-color);
+            padding: 2px 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navBar">
+        <ul class="NavElements">
+            <li class="mainElements "><a href="" class="border1">Home </a></li>
+            <li class="mainElements "><a href="" class="border2">About Us</a></li>
+            <li class="mainElements "><a href="" class="border3">Contact</a></li>
+            <li class="mainElements "><a href="" class="border4">Blog</a></li>
+            <li class="mainElements "><a href="" class="border5">Login</a></li>
+            <li class="mainElements "><a href="" class="border6">Projects</a></li>
+            <li class="mainElements "><a href="" class="border7">Email</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
