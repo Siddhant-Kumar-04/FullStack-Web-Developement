@@ -14,7 +14,7 @@
             padding: auto;
         }
 
-        div {
+        .dogs {
             width: 100px;
             height: 100px;
         }
@@ -26,9 +26,10 @@
 
         #dog1 {
             /* position: static; It will pe default positioning top , bottom , left property will not work*/
-            /* position: relative; */
-            /* top: 100px; */
-            /* left: 0px; */
+            position: static;
+            ;
+            top: 100px;
+            left: 0px;
             /* In a nutshell , relative sets the position of the elements with respect to its original position */
 
         }
@@ -38,7 +39,9 @@
             /* position: relative;
             left: 100px;
             top: 0px; */
-            position: absolute;
+            position: sticky;
+            top: 58px;
+            left: 50px;
 
 
         }
@@ -51,26 +54,52 @@
         /* } */
 
         section {
-            position: relative;
+            position: static;
             background-color: lightblue;
             width: 600px;
-            height: 400px;
-            margin: 30px 30px;
+            height: 900px;
+            top: 50px;
+            ;
+        }
+
+        .navBar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: black;
+            width: 100%;
+            color: white;
+            padding: 20px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
     </style>
 </head>
 
 <body>
+
+    <div class="navBar">
+        <div class="logo">
+            MyWebsite
+        </div>
+        <div class="links">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Services</a>
+        </div>
+    </div>
+
     <section>
-        <div id="dog1">
+        <div id="dog1" class="dogs">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcF4aseU7PKqm473OF9dzxk4RWXQWvXiOVjB0vAWrrQ86MDSQsQ6T1K2YlWA3_k81Ilro&usqp=CAU"
                 alt="">
         </div>
-        <div id="dog2">
+        <div id="dog2" class="dogs">
             <img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
                 alt="">
         </div>
-        <div id="dog3">
+        <div id="dog3" class="dogs">
             <img src="https://cdn.shopify.com/s/files/1/0255/7424/4445/files/image3_480x480.jpg?v=1651129751" alt="">
         </div>
     </section>
