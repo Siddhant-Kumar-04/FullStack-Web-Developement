@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+
+
+            margin: 0px;
+            padding: 0px;
+            padding: auto;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+        }
+
+        div>img {
+            width: 100px;
+            height: 100px;
+        }
+
+        #dog1 {
+            /* position: static; It will pe default positioning top , bottom , left property will not work*/
+            /* position: relative; */
+            /* top: 100px; */
+            /* left: 0px; */
+            /* In a nutshell , relative sets the position of the elements with respect to its original position */
+
+        }
+
+        #dog2 {
+            /* position: static; */
+            /* position: relative;
+            left: 100px;
+            top: 0px; */
+            position: absolute;
+
+
+        }
+
+        /* #dog3 { */
+        /* position: static; */
+        /* position: relative;
+            left: 200px;
+            top: -100px; */
+        /* } */
+
+        section {
+            position: relative;
+            background-color: lightblue;
+            width: 600px;
+            height: 400px;
+            margin: 30px 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div id="dog1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcF4aseU7PKqm473OF9dzxk4RWXQWvXiOVjB0vAWrrQ86MDSQsQ6T1K2YlWA3_k81Ilro&usqp=CAU"
+                alt="">
+        </div>
+        <div id="dog2">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
+                alt="">
+        </div>
+        <div id="dog3">
+            <img src="https://cdn.shopify.com/s/files/1/0255/7424/4445/files/image3_480x480.jpg?v=1651129751" alt="">
+        </div>
+    </section>
+</body>
+
+</html>
