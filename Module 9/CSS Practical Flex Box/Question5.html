@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IRCTC Booking Interface</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            height: 100vh;
+            border: 5px solid black;
+        }
+
+        .left-section {
+            flex: 1;
+            padding: 30px;
+        }
+
+        .right-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .right-section img {
+            width: 100%;
+            height: 50%;
+            object-fit: cover;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .tagline span:nth-child(1) {
+            color: green;
+        }
+
+        .tagline span:nth-child(2) {
+            color: orange;
+        }
+
+        .tagline span:nth-child(3) {
+            color: steelblue;
+        }
+
+        .form-section {
+            margin-top: 20px;
+        }
+
+        .form-section div {
+            margin-bottom: 15px;
+        }
+
+        .form-section label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-section input,
+        .form-section select {
+            width: 100%;
+            padding: 8px;
+        }
+
+        .search-btn {
+            background-color: #00c853;
+            border: none;
+            padding: 12px 20px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        .logos {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .logos img {
+            height: 50px;
+        }
+
+        .top-links {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+
+        .top-links button {
+            padding: 5px 10px;
+            border: none;
+            background-color: #f57c00;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="left-section">
+        <div class="top-links">
+            <button>Login</button>
+            <button>Register</button>
+            <button>Agent Login</button>
+        </div>
+
+        <div class="logos">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/IRCTC_Logo.svg/1024px-IRCTC_Logo.svg.png"
+                alt="IRCTC" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Indian_Railways_Logo.svg/1280px-Indian_Railways_Logo.svg.png"
+                alt="Indian Railways" />
+        </div>
+
+        <h1>Indian Railways</h1>
+        <div class="tagline">
+            <span>Safety </span>
+            <span>Security </span>
+            <span>Punctuality</span>
+        </div>
+
+        <div class="form-section">
+            <div>
+                <label>From</label>
+                <input type="text" value="Bangalore (KSR)" />
+            </div>
+            <div>
+                <label>To</label>
+                <input type="text" value="Kasaragod (KSD)" />
+            </div>
+            <div>
+                <label>Date</label>
+                <input type="date" value="2023-08-01" />
+            </div>
+            <div>
+                <label>Class</label>
+                <select>
+                    <option selected>3A</option>
+                    <option>2A</option>
+                    <option>SL</option>
+                </select>
+            </div>
+            <div>
+                <label>Seat Type</label>
+                <select>
+                    <option selected>TATKAL</option>
+                    <option>GENERAL</option>
+                    <option>LADIES</option>
+                </select>
+            </div>
+
+            <button class="search-btn">Search Train →</button>
+        </div>
+    </div>
+
+    <div class="right-section">
+        <img src="https://www.indianrailways.gov.in/railwayboard/uploads/directorate/heritage/images/Vande_Bharat_Express.jpg"
+            alt="Vande Bharat" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Dudhsagar_falls.jpg" alt="Train near waterfall" />
+    </div>
+
+</body>
+
+</html>
