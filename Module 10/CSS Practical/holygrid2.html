@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mainContainer {
+            display: grid;
+            grid-template-rows: 10vw 80vw 10vw;
+            grid-template-areas: "header header header"
+                "main main main"
+                "footer footer footer";
+            border: 3px solid black;
+            text-align: center;
+
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 10vw 80vw 10vw;
+            /* grid-auto-flow: column; */
+            grid-template-areas: "left middle right";
+        }
+
+        .left {
+            grid-area: left;
+            background-color: cyan;
+
+        }
+
+        .middle {
+            grid-area: middle;
+            background-color: orange;
+        }
+
+        .right {
+            grid-area: right;
+            background-color: yellow;
+        }
+
+        header {
+            grid-area: header;
+            background-color: blue;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="mainContainer">
+        <header>Header</header>
+
+        <main>
+            <div class="left">Left</div>
+
+            <div class="middle">Middle</div>
+
+            <div class="right">Right</div>
+
+        </main>
+
+        <footer>This is Footer</footer>
+    </section>
+</body>
+
+</html>
