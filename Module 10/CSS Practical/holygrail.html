@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            border: 1px solid black;
+            text-align: center;
+            display: grid;
+            grid-template-rows: 10vh 80vh 10vh;
+            gap: 10px;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-auto-flow: column;
+            grid-template-areas: "header header header"
+                "nav article aside"
+                /* "main" "main" "main" */
+                "footer footer footer";
+        }
+
+        header {
+            grid-area: header;
+            background-color: blue;
+
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: green;
+        }
+
+        /* main {
+            display: grid;
+            text-align: center;
+            grid-area: main;
+            background-color: yellow;
+            grid-auto-flow: column;
+            grid-template-columns: 1fr 3fr 1fr;
+
+
+        } */
+
+        nav {
+
+            background-color: cyan;
+
+        }
+
+        article {
+
+            background-color: orange;
+        }
+
+        aside {
+
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Header</h1>
+        </header>
+        <!-- <main> -->
+        <nav>
+            <h1>Nav</h1>
+        </nav>
+
+        <article>Artical</article>
+        <aside>Aside</aside>
+
+        <!-- </main> -->
+        <footer>
+            <h1>Footer</h1>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
