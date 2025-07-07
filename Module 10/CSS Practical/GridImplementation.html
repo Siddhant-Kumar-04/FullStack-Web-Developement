@@ -13,14 +13,20 @@
         .gridContainer {
             height: 500px;
             align-content: center;
-            justify-content: center;
+            justify-content: space-evenly;
             display: grid;
             border: 2px solid black;
             padding: 1px;
             border-radius: 5px;
+            align-items: center;
+            justify-items: center;
+            /* grid-template-columns: 100px 100px;
+            grid-template-rows: 50px 50px 50px 50px; */
+            grid: 50px 50px 50px 50px/100px 100px;
+            /* grid property is used to combine both columns and row */
             /* grid-template-columns: 50% 50%; */
             /* grid-auto-flow: row; */
-            grid-template-columns: 100px 100px;
+
             /* grid-template-columns: repeat(4, 1fr); */
             /* grid-template-columns: repeat(4, 100px); */
             /* grid-template-columns: repeat(2, 1fr) 2fr 1fr; */
@@ -40,6 +46,8 @@
             border: 1px solid black;
             margin: 2px;
             padding: 10px;
+            height: 50px;
+            width: 50px;
 
 
 
