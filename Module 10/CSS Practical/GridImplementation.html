@@ -15,15 +15,40 @@
             border: 2px solid black;
             padding: 5px;
             border-radius: 5px;
-            grid-template-columns: 200px 200px 200px;
+            /* grid-template-columns: 50% 50%; */
+            /* grid-auto-flow: row; */
+            /* grid-template-columns: 1fr 1fr 2fr 1fr; */
+            /* grid-template-columns: repeat(4, 1fr); */
+            /* grid-template-columns: repeat(4, 100px); */
+            /* grid-template-columns: repeat(2, 1fr) 2fr 1fr; */
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: " a1 a1 a3" " a1 a1 b3" " c1 c1 c3";
+            /* grid-auto-flow: row; */
+            /* grid-auto-flow: column; */
+            /* grid-template-rows: 50px 50px 50px; */
+
         }
 
-        .items {
+
+
+        .item {
             background-color: aqua;
             border: 1px solid black;
-            margin: 10px;
+            margin: 2px;
+            padding: 10px;
 
 
+        }
+
+        .a1 {
+            grid-area: a1;
+            background-color: red;
+
+        }
+
+        .c1 {
+            grid-area: c1;
+            background-color: yellow;
         }
     </style>
 </head>
@@ -31,10 +56,15 @@
 <body>
     <h1>Introduction to grids</h1>
     <div class="gridContainer">
-        <div class="items">1</div>
-        <div class="items">2</div>
-        <div class="items">3</div>
-        <div class="items">4</div>
+        <div class="item a1">1</div>
+        <div class="item a1">2</div>
+        <div class="item">3</div>
+        <div class="item a1">4</div>
+        <div class="item a1">5</div>
+        <div class="item ">6</div>
+        <div class="item c1">7</div>
+        <div class="item c1">8</div>
+
     </div>
 </body>
 
