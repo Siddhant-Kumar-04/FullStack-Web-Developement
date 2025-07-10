@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallary App</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            outline: 1px solid red;
+        }
+
+
+
+        #gallary {
+            height: 80%;
+            width: 80%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.5rem;
+
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .image1 {
+            grid-row: 1/3;
+            grid-column: 1/3;
+        }
+
+        .image4 {
+            grid-row: 2/4;
+            grid-column: 3/6;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="gallary">
+        <img src="./Image1.jpeg" class="image1" alt="">
+        <img src="./images2.jpeg" alt="">
+        <img src="./images3.jpeg" alt="">
+        <img src="./images4.jpg" class="image4" alt="">
+        <img src="./images5.jpeg" alt="">
+        <img src="./images6.jpeg" alt="">
+        <img src="./images6.jpeg" alt="">
+        <img src="./images6.jpeg" alt="">
+        <img src="./images6.jpeg" alt="">
+        <img src="./images6.jpeg" alt="">
+        <img src="./images6.jpeg" alt="">
+        <img src="./images6.jpeg" alt="">
+
+    </div>
+</body>
+
+</html>
