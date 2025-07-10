@@ -12,17 +12,20 @@
 
         .gridContainer {
             height: 500px;
-            align-content: center;
-            justify-content: space-evenly;
             display: grid;
+            /* align-content: start; */
+            /* justify-content: start; */
             border: 2px solid black;
-            padding: 1px;
+            padding: 5px;
             border-radius: 5px;
-            align-items: center;
-            justify-items: center;
-            /* grid-template-columns: 100px 100px;
-            grid-template-rows: 50px 50px 50px 50px; */
-            grid: 50px 50px 50px 50px/100px 100px;
+            /* align-items: start;  */
+            /* Its Works Within the cell */
+            /* justify-items: end; */
+            grid-template-columns: 1fr 1fr;
+            /*grid-template-rows: 50px 50px 50px 50px;
+            */
+            /* grid: 50px 50px 50px 50px/100px 100px; */
+
             /* grid property is used to combine both columns and row */
             /* grid-template-columns: 50% 50%; */
             /* grid-auto-flow: row; */
@@ -44,14 +47,22 @@
 
             background-color: aqua;
             border: 1px solid black;
-            margin: 2px;
+            margin: 1px;
             padding: 10px;
-            height: 50px;
-            width: 50px;
-
-
-
+            /* min-height: 50px;
+            max-width: 50px; */
         }
+
+        /* It is used to merge cells grid-row and column */
+        /* .a1 {
+            grid-row: 1/3;
+            grid-column: 1/3;
+        } */
+
+        /* .b2 {
+            grid-row: 1/3;
+            grid-column: 2/3;
+        } */
 
         /* .a1 {
             grid-area: a1;
@@ -63,6 +74,10 @@
             grid-area: c1;
             background-color: yellow;
         } */
+        /* .b4 {
+            grid-row: 1/4;
+            grid-column: 2/4;
+        } */
     </style>
 </head>
 
@@ -70,10 +85,10 @@
     <h1>Introduction to grids</h1>
     <div class="gridContainer">
         <div class="item a1">1</div>
-        <div class="item a1">2</div>
-        <div class="item">3</div>
-        <div class="item a1">4</div>
-        <div class="item a1">5</div>
+        <div class="item b2">2</div>
+        <div class="item b3">3</div>
+        <div class="item b4">4</div>
+        <div class="item ">5</div>
         <div class="item ">6</div>
         <div class="item c1">7</div>
         <div class="item c1">8</div>

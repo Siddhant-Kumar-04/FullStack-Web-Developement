@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            outline: 1px solid red;
+            margin: 0px;
+            padding: 0px
+        }
+
+        .mainContainer {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-rows: 10vh 80vh 10vh;
+
+        }
+
+        main {
+            display: grid;
+            grid-column: 1/ span 3;
+            grid-template-columns: 1fr 3fr 1fr;
+            ;
+        }
+
+        .left {
+            background-color: cyan;
+
+        }
+
+        .middle {
+
+            background-color: orange;
+        }
+
+        .right {
+
+            background-color: yellow;
+        }
+
+        header {
+            grid-column: 1/span 3;
+
+            background-color: blue;
+        }
+
+        footer {
+            grid-column: 1/ span 3;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="mainContainer">
+        <header>Header</header>
+
+        <main>
+            <div class="left">Left</div>
+
+            <div class="middle">Middle</div>
+
+            <div class="right">Right</div>
+
+        </main>
+
+        <footer>This is Footer</footer>
+    </section>
+</body>
+
+</html>
