@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.mainContainer {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            height: 30vh;
+            width: 50vh;
+            column-gap: 5px;
+            row-gap: 5px;
+
+
+
+        }
+
+        .A {
+            grid-column: 1/ span 2;
+            grid-row: 1;
+
+        }
+
+        .B {
+            grid-column: 3;
+            grid-row: 1/ span 2;
+        }
+
+        .item {
+            background-color: blanchedalmond;
+            border-radius: 5px;
+            padding: 20px;
+
+            /* border-radius: 10px solid black; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="A item">A</div>
+        <div class="B item">B</div>
+        <div class="C item">C</div>
+        <div class="D item">D</div>
+    </div>
+</body>
+
+</html>
