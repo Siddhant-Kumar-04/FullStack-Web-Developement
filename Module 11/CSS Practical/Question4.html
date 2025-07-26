@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        button {
+            background-color: rgb(62, 62, 180);
+            color: white;
+            border: 1px solid rgb(62, 62, 180);
+            border-radius: 5px;
+            height: 40px;
+            width: 100px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: green;
+            content: "Click Me";
+            box-shadow: 2px 2px 5px rgb(0, 0, 0);
+        }
+
+        button:before {
+            content: "Before";
+            margin: 5px
+        }
+
+        button:after {
+            content: "After";
+            margin: 5px;
+        }
+    </style>
+
 </head>
+
 <body>
-    
+    <div>
+        <button>PW Skills</button>
+    </div>
 </body>
+
 </html>
