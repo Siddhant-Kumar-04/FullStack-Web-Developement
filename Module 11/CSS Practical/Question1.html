@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <style>
+        body a {
+            color: red;
+            /* text-decoration: none; */
+        }
+
+        nav>h2 {
+            color: blue;
+            background-color: black;
+        }
+
+        p:first-of-type {
+            color: yellow;
+            background-color: black;
+
+        }
+
+        a[href="#"] {
+            color: red;
+            text-decoration: none;
+        }
+
+        a[class="active"] {
+            color: green;
+            text-decoration: underline;
+        }
+
+        a[target="_self"] {
+            background-color: yellow;
+        }
+
+        p:last-of-type::after {
+            content: "..."
+        }
+
+        ul li::marker {
+            color: blue;
+        }
+
+        p:nth-of-type(2)::first-letter {
+            color: red;
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h2>TOI</h2>
+            <div>
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="#" target="_blank">Home</a></li>
+                    <li><a href="#" class="active" target="_self">About</a></li>
+                    <li><a href="#" target="_blank">Services</a></li>
+                    <li><a href="#" target="_blank">Contact</a></li>
+                </ul>
+            </div>
+
+            <p>The times of India</p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
+                maxime a. Deserunt distinctio doloremque repudiandae excepturi fugit
+                repellat nostrum culpa!
+            </p>
+
+            <p>read articles</p>
+        </nav>
+    </header>
+</body>
+
+</html>
