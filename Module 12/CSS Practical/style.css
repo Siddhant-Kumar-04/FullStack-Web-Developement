@@ -1,0 +1,29 @@
+#red{
+    height:100px;
+    width:100px;
+    border-radius: 100%;;
+    background-color: red;
+    transform: translateY(50px) translateX(50px);
+    /* Say we want to horizontally move the element */
+    
+}
+  #blue{
+    height:100px;
+    width:100px;
+    border-radius:100%;
+    background-color: blue;
+    transform: rotate(185deg)
+}
+/*
+#green{
+    height:100px;
+    width:100px;
+    background-color: green;
+}
+
+#yellow{
+    height:100px;
+    width:100px;
+    background-color: yellow;
+   
+}  */
