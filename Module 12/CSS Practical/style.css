@@ -1,20 +1,41 @@
+
+.mainParent{
+    background-color: Yellow;
+    height:500px;
+    width:500px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#line{
+    height:1px;
+    width:50px;
+    background-color: black;
+   
+}
 #red{
     height:100px;
     width:100px;
-    border-radius: 100%;;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
     background-color: red;
-    transform: translateY(50px) translateX(50px);
+     transform:scale3D(2,5,3);
+    
+    /* transform: translateY(50px) translateX(50px); */
     /* Say we want to horizontally move the element */
     
 }
-  #blue{
+ /* #blue{
     height:100px;
     width:100px;
     border-radius:100%;
     background-color: blue;
     transform: rotate(185deg)
 }
-/*
+
 #green{
     height:100px;
     width:100px;
