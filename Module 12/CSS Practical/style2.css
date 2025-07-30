@@ -1,0 +1,29 @@
+#box{
+    width:100px;
+    height:100px;
+    background-color: red;
+}
+
+#box:hover{
+    /* animation-name:change-color;
+    animation-duration: 2s;;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+    animation: change-color 2s infinite alternate;
+}
+
+@keyframes change-color{
+    0%{
+        background-color:blue; 
+    }
+    20%{
+        background-color: pink;
+    }
+    50%{
+        background-color: yellow;
+    }
+    100%{
+        background-color: green;
+    }
+} 
+    
