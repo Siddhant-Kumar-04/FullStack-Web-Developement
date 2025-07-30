@@ -15,8 +15,9 @@
    
 }
 #red:hover{
-    background-color: green;
-    /* transition: background-color  2s ease-out; */
+   
+    transform: skew(45deg, 20deg);;
+    transition: transform 2s ease-in-out;
 }
 #red{
     height:100px;
@@ -26,9 +27,9 @@
     align-items: center;
     background-color: red;
     /* border-radius: 100%; */
-    transition-property: background-color;
+    /* transition-property: background-color;
     transition-duration: 5s;
-    transition-timing-function: ease-out;
+    transition-timing-function: ease-out; */
     /* transition-delay: 2s; */
     /* transform: scale(180deg); */
     /* transform: skew(20deg ,20deg); */
