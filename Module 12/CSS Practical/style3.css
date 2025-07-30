@@ -43,7 +43,7 @@ body{
     content: '';
     background-color: red;
     /* border-radius: 50%; */
-    height: 100px;
+    height: 50px;
     width: 8px;
     animation: streath 1s ease-in-out infinite;
 }
@@ -102,8 +102,41 @@ body{
     width: 20px;
     background-color: transparent;
     border:1px solid red;
-    border-radius: 50%;
+    background-color: blue;;
+    /* border-radius: 50%; */
     animation: square 1s ease-in-out infinite;
+    animation-duration: 2s;;
+}
+#loader9{
+    display:flex;
+    justify-content: space-around;
+
+}
+#loader9::before, #loader9::after,  #loader9 div{
+    content: '';
+    background-color: red;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    animation: roller 1s ease-in-out infinite;
+}
+#loader9::after{
+    animation-delay: 0.5s;
+}
+#loader9 div{
+    animation-delay: 1s;
+}
+
+
+@keyframes roller {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+    
+    
 }
 
 @keyframes square{
