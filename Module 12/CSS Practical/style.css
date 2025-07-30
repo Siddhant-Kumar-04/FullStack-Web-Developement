@@ -14,15 +14,23 @@
     background-color: black;
    
 }
+#red:hover{
+    background-color: green;
+    /* transition: background-color  2s ease-out; */
+}
 #red{
     height:100px;
     width:100px;
     display:flex;
     justify-content: center;
     align-items: center;
-    /* border-radius: 100%; */
     background-color: red;
-    transform: matrix(2,0, 0, 2, 0, 0);
+    /* border-radius: 100%; */
+    transition-property: background-color;
+    transition-duration: 5s;
+    transition-timing-function: ease-out;
+    /* transition-delay: 2s; */
+    /* transform: scale(180deg); */
     /* transform: skew(20deg ,20deg); */
     /* transform: rotate(45deg); */
      /* transform:scale3D(2,5,3); */
@@ -30,6 +38,19 @@
     /* Say we want to horizontally move the element */
     
 }
+
+.expand{
+    height:100px;
+    width:100px;
+    background-color: brown;
+}
+.expand:hover{
+    width:600px;
+    transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: step-end;
+}
+
  /* #blue{
     height:100px;
     width:100px;
@@ -37,6 +58,8 @@
     background-color: blue;
     transform: rotate(185deg)
 }
+
+
 
 #green{
     height:100px;
