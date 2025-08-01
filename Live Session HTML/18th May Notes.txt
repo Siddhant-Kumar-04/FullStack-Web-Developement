@@ -1,0 +1,595 @@
+Naman Jindal -> 
+    Mern -> 
+    Mongo Express React Node -> 
+    
+    Vue js
+    typescript 
+    MySql 
+    Postgress
+
+    Cloud 
+        AWS GCP 
+    
+    Infra 
+        Kubernetes 
+        Docker 
+
+
+Addressing Common Issues -> 
+    1. English vs hindi -> English -> Hindi repeatation -> 90% english 
+    2. Don't use mobile phones 
+        Addition 
+
+    3. minor topic completion -> 
+        20 mins
+        3 mini pauses -> 
+    
+    4. Delivrables from my end -> expectations from me?? 
+        A. Revise the lecture 
+        B. Share my practical expereince with each and every topic -> 
+        C. Pointing out the interview questions and important topics -> 
+            extremely important -> interviews and your coding journey 
+            3* -> interview or coding journey -> 
+        D. Going above and beyond -> 
+            Ai existance -> 
+                generic chizo -> 
+                more in depth knowledge -> offline videos -> 
+                    difficult thigns -> 
+                    beyond level -> eventual aa jayega -> 
+
+    5. Daily Doubt sessions -> pw team -> 
+        mon -fri -> 7-8pm -> 
+        Batch -> Revision -> 1-1.5 hr -> 15 mins
+
+    2 hours -> 5 star topic -> client server architecture 
+
+My expectations from you folks ->
+1. Try to attend all lectures 
+2. Don't use mobile phones
+3. Revise the lecture 
+    1.5x -> note the important points -> 
+    notes -> note the timestamp -> 
+        what is server -> 
+            15: 20 second -> 
+
+I am a web d instructor -> 
+    Management team of PW 
+
+1. Platform -> not working 
+2. PLacement -> 
+3. Customer 
+
+introductory -> 1hour
+
+2hour - 2.5 hours ->
+
+1 hour -> 10 mins ->
+
+Doubt sessions -> 7 to 8pm 
+
+offbeat -> mid -> 
+curriculum -> topics -> 
+
+Module ->
+    Intro to html -> 
+        revision -> 
+        extra chize -> 
+    
+
+1. Git -> 10 mins ->
+
+Git practical scenario -> 
+
+    Facebook -> how many engineers would be there? 
+
+3 hours -> 
+
+70K ->
+    Instagram -> 18k 
+    whatsapp 
+    Facebook
+    Adhoc 
+
+One codebase -> 18000 -> Git -> manage versioning of a code 
+helps in cross team work -> 
+Git -> 
+
+Another -> 
+History maintaience -> 
+    released feature -> buggy -> 
+        last stable version -> 
+        we can through git -> 
+
+How it does? discussion for another time -> 
+
+
+Web Development -> 
+    1. Frontend Developement 
+    2. Backend Developemnt 
+
+    Frontend -> user facing portion -> uses sessions
+
+    Frontend -> 
+        html
+        css 
+        js 
+
+        Frontend -> It is an interface through which our end users can interact with myh website
+
+    Backend -> 
+        Logic driven -> 
+        Majorly handles the data -> 
+        Generic user never sees that portion -> 
+        a generic user cannot interact with that portion 
+
+    Technologies -> criss cross you cna have various ways to learn backend -> 
+        1. Programming language
+        2. Database 
+
+        JS / Node backend developer
+        MongoDb/ Mongoose
+
+    Conclusion -> 
+        Frontend vs Backend -> 
+    
+    Frontend and Backend -> 
+        HTMl -> CSS ->GIT ->  JS -> JS DOM -> JS advance -> Tailwind -> React -> Node -> Express
+        -> Mongodb -> Mongoose -> Node advance 
+
+        Bootstrap is used much less in comparsion to the up and ocming technology like tailwind -> 
+
+        Bootstrap -> 8-9 years -> 
+        Bootstrap -> First popular -> Ui libraries 
+
+
+        JS is the most popualr -> the most hiring -> 
+
+    
+    Frontend -> 5 mins break -> Building Blocks of website
+
+    HTMl -> Strucute of website -> general placement and content putting
+
+    CSS -> Design and beautify
+
+    JS -> functioanlity, click, getting a pop up -> interactivity 
+
+
+1. Client Server Architecture -> 
+
+
+
+Airbnb.co.in -> 
+
+DNS resolution -> 
+DNS resolution algorithm -> 
+
+DNS -> Domain Name Systems -> 
+
+
+Does every DNS have every domain stored -> no -> 
+Treat it as yes -> 
+
+what is the data center ? and what is the role in client server algorith?
+
+
+Advanced ->
+
+
+Ip address -> 
+    2 types -> 
+
+    1. IPv4 address -> 192.168.1.10
+    2. IPv6 address  -> 2001:0db8:85a3:0000:0000:8a2e:0370:7334
+
+    till 2019 -> only ipv4 address existed -> 
+
+    We never anticipated at the time of creation that we can have some many website over the internet that we can 
+    run out of IPv4. 
+
+    But that thing happned
+
+    Can I run 2 websites with the same IP address? NO 
+
+
+    web Tools and dev tools -> 
+    1. Every browser has their own webtools 
+    2. Every browser webtools will not look same
+    3. Every browswer webtools will have similar functioanlity but not exact 
+
+    My recommendation:
+        A. To use chrome browser -> 
+
+    Reasons: 
+        1. It offers wide features
+        2. It sets a benchmark 
+        3. It is much less complicated and much more good looking 
+        4. I am using () -> replicate -> 
+            chrome is not best 
+            I am most comfortable with chrome -> 
+
+    Default browser setting from microsoft edge to chrome -> 
+
+    Bug Resolution and debugging -> 
+
+
+    HTML -> not much concepts more on the theory -> 
+
+
+    Meta tags 
+
+    Css -> 
+
+    difference between html 4 and html 5 => 
+        1. more semantic tags ->
+            a. div -> footer
+            b. header
+            c. main
+
+
+    HTML is a very forgiving language -> 
+    It does not throw error -> in many many many places which are ideally wrong and a developer should never ever do
+
+
+    Tags -> 
+        self closing  <img />
+        unpaired tags <br> 
+            same -> 
+
+        paired tags <h1> </h1>
+    
+    Tags -> 
+
+    what makes a tag unique -> 
+        majorly the default css(design)
+
+
+    inline -> same as the elements width, starts from the same line eg img
+    block -> takes the full viewport and always start from a new line eg para
+
+
+    3 types of list -> 
+        unoredered 
+        ordered
+
+        definition -> newly introduce -> and is not used tht much
+
+    Attributes -> properties which give extra information to the tag which can even lead to structural change of the tag
+
+    there are some compulsory attribiutes, non compulsory ->
+        title -> non compulsory
+        href -> it sort of acted like compu;lsory attribute ->
+
+        src -> compulsory -> 
+
+    Important Discussion?
+        How do we rememeber all the attributes and there values?
+
+        You don't have to remember 
+
+        img
+
+    DOCUMENTATION 
+        1. What is the meanign of a documentation and why do we need one?
+
+        why do we need one?
+            1. We havent made html 
+            2. We are programmers we do not mug up concepts 
+        
+        interview -> can we google -> 
+
+    5 mins break -> 8:05 
+
+    Semantic Vs Non Semantic tags -> ****
+        Semantic -> meaning attached to it, they have a specified usecase
+                    helps in SEO -> search engine optimisation 
+
+
+    Non Semantic -> 
+        have not meaning -> div and span, b, i, 
+
+
+
+    Connecting multiple pages -> 
+
+
+    id attribute -> identifier -> 
+
+
+
+Todos
+    6. Img -> interal and external -> 
+        A. Understanding the file structure and relative and absolute path -> generic topic -> 
+    1. Iframe tag with youtube and normal web pages -> 
+    2. Table 
+    3. Forms
+    4. Audio
+    5. Video 
+
+
+relative and absolute paths -> 
+    image
+    videos
+    Audio
+    connecting different files together 
+    js
+    React
+    Node
+    databases 
+
+
+Absolute path -> 
+1. It does not matter where I am utilising it, it is irrespective of the place of usage
+
+Relative path -> 
+1. The path is decided on the basis of the file where I am utilising it, it basically needs an exact direction of
+how to reach from one file to another file
+
+come outside a file ->    ./
+
+../ -> going up a directory
+
+
+which one should we use relative or absolute? why?
+
+software engineers -> alone or in a team? 
+
+
+C:\Users\abhin\Downloads\Phy Walah Full stack web development\HTML\CODE HTML
+/Users/deepikayadav/Desktop/vsCode/JS_LEARNING/07MegaProj/src/components/index.js
+C:\Users\Lenovo\OneDrive\Desktop\PWSkills\fsd\index.html
+C:\Users\sujal\OneDrive\Desktop\Reactnew\my-app\src\Blog\Home.jsx
+C:\Users\LENOVO\Developer\FullstackDevEng\HTML\Core Html Assignment\web_development.html
+/Users/namanjindal/Documents/pw/fsd-march-25/ecommerce/index.html
+
+
+1. 
+
+Image -> 
+    extensions -> 
+        .jpg
+        .png 
+        .jpeg 
+
+    SVG -> code -> scalable vector graphics 
+
+Ifrmae -> 
+
+Youtube Videos -> 
+    Blogs -> videos of youtube 
+
+
+
+col-span
+row-spa
+
+
+Todos
+    3. Forms
+    4. Audio
+    5. Video 
+    6. Accessibility?
+    7. meta tags
+    8. Semantic vs non semantic -> div
+    8. Intro to css
+
+
+without the name -> your data will never pass -> 
+
+core html and css -> name attribute in a form is very important -> 
+
+id -> identifier -> uniquely identifies the element -> 
+    special in your css -> 
+
+for's label -> interconnected to the id of the field
+
+
+validations in forms 
+    these are browser driven validations ->
+
+    can we add our own validations?? -> 
+
+
+    UX improvement -> make the life of user easy -> 
+
+    validations
+
+REST API methods -> and each has a unique functioanlity
+    very high level discussion
+    1. GET 
+    2. POST 
+
+    psot -> which is more security oriented -> 
+        signup 
+
+
+    3. PUT  
+    4. PATCH 
+    5. DELETE
+
+the file path or the url becomes faulty -> very simple thing -> easily verifiable -> 
+
+there are certain file formats which certain brwoser do not support -> 
+
+
+around 2019 -> the browsers commity -> html css commity -> 
+    declared a rule -> when you visit a webpage it cannot automatically start playing the sound in a video or audio
+
+6. Accessibility?
+
+8. Semantic vs non semantic -> div
+dedicated tags -> to address Accessibility -> ARIA -> small startups do not bother about this -> 
+mega companies -> resources -> 
+
+what is the differnce between semantic and non semantic? why should we prefer using semantic over non semantic ->*** very Common
+rich SEO -> 
+
+Important things in HTML -> 
+    1. Semantic, non semantic 
+    2. Accessibility
+    3. Forms
+    4. Tables 
+    5. what does attributes do
+    6. meta tags 
+    7. How to use web tools/ dev tools 
+    8. Relative and absolute 
+
+
+7. meta tags
+8. Intro to css
+
+
+
+meta -> to provide data about data -> 
+
+second data -> is my website content -> coins -> 
+
+    which language -> 
+    what is the data about -> 
+    who might have writen the data -> 
+
+https://www.google.com 
+https://www.google.com?dem="1212"
+
+robots -> script to add -> 
+
+render pages on the server--- helps in SEO optimization
+
+react -> 
+Next.js exist -> server side rendering ->
+
+CSS -> to make a website look good, desing add, animations over it 
+
+
+Rule -> which we generally always follow -> 
+
+1. Separation of concerns -> 
+
+3 basic selectors -> 
+    1. id 
+    2. class
+    3. tag
+
+"CSS specificity" -> preference -> priority 
+Comparision -> 
+internal and inline 
+
+inline > internal === external
+
+specificity -> 
+    id vs class vs tag
+
+    id > class > tag
+
+    id -> #
+    class -> .
+
+variables in css -> 
+    variables -> 
+
+    vairable = 
+
+    headingColor = 'red'
+
+    hex 
+    rgb
+
+difference between 
+
+inline-block and block and inline -> *****
+
+
+*** ->
+display: none
+
+visibility: hidden -> 
+
+we can add multiple css classes on a tag/elemenet but we can add one id to a tag/elemeent
+
+
+9. Positions  -> how many types of positions we have? 5 types -> ***** 
+    1. Static (default)
+    2. Relative -> in reference to its original position
+    3. Absolute -> it aligns itself to the nearest parent having a position other than static if in a scenario
+    there are no parents having a positions other than static the it aligns itself on the basis of html tag
+
+
+    5. Fixed 
+    4. Sticky 
+
+    whenever we have a position other than static we basically -> superpowers -> 
+        1. top
+        2. left 
+        3. right 
+        4. bottom 
+        5. z-index
+
+    more the z-index the higher it is placed in the heirarchy and hence it gets displayed
+
+
+10. Flex box and grids -> 
+
+    display: flex ->
+    flex-direction: row (default), column, column-reverse, row-reverse 
+
+    both of the below are dependent on how flex-direction is done, 
+        justify-content: along the axis
+            1. space-between
+            2. space-around
+            3. space-evenly
+            4. center
+            5. left 
+            6 right
+
+        align-items: perpendicular to the axis
+
+
+
+Write code to position 5 equal-sized (50 X 50px) boxes A, B, C, D, and E as follows, 
+1. box A 200px from the left, and 200px from the top of the viewport
+2. box B -30px left, and -30px above from the center of box A.
+3. box C -30px right, and -30px above from the center of box A.
+4. box D -30px left, and -30px below from the center of box A.
+5. box E -30px right, and -30px below from the center of box A.
+
+
+display: block
+display: inline
+display: none 
+
+display: flex -> flex I dont care if oyu are block or inline -> I am a unique display
+
+2 kinds -> 
+1. Parent level properties 
+2. Child level properties 
+    A. order 
+    B. align-self 
+    C. flex ->
+        1. flex-grow
+        2. flex-shring
+        3. width: flex-basis
+
+Flexbox advanced -> 
+    1. before, after alogn with flex
+    2. Flex child properties
+
+
+
+!important -> 
+mobile first design and desktop first design -> 
+
+1. Flex or grids or both
+2. using appropriate symbols -> rem, em %
+3. Proper element groupings -> 
+4. Media queries -> last resort -> granular changes -> 
+
+
+
+media query -> 
+
+grids -> 
+transform -> 
+animations -> 
+
+Git and github -> 2 sessions -> 
+
+JS ->??
