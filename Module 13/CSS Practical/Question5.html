@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+        }
+        body{
+            height:100vh;
+            width:100vw;
+        }
+        .main{
+            height:100%;
+            width:100%;
+            display:flex;
+            justify-content: center;
+            align-items: center ;
+            /* grid-template-columns: 1fr 10fr 1fr; */
+            /* grid-template-areas: "box1 box2 box4"
+                                 "box1 box3 box4"; */
+            text-align: center;
+            color:white
+        }
+        .middleBox{
+            height: 100%;
+            width:100%;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self:center;
+        }
+        .box{
+            height:100%;
+            width:100%;
+        }
+        .box1{
+            width:20%;
+            color:white;
+            background-color: black;
+            grid-area: box1;
+        }
+        .box2{
+            /* grid-area: box2; */
+            background-color: green;
+        }
+        .box3{
+            /* grid-area: box3; */
+            background-color:orangered;
+        }
+        .box4{
+            width:20%;
+            /* grid-area: box4; */
+            background-color: black;
+        }
+        @media screen and (max-width:568px) {
+            .main{
+              display: flex;
+              flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+                .box1{
+                    width:100%;
+                    height:50%;
+                }
+                .box4{
+                    width:100%;
+                    height:50%;
+                }
+                
+        }
+            
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box box1">Box1</div>
+        <div class="middleBox">
+        <div class="box box2">Box2</div>
+        <div class="box box3">Box3</div>
+        </div>
+        <div class="box box4">Box4</div>
+    </div>
+</body>
+</html>
