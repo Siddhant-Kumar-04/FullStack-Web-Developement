@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            outline: 1px solid black;
+            
+        }
+        .main{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        img{
+            flex-basis: 400px;;
+           height:auto;
+
+        }
+        @media screen and (max-width: 500px) {
+            .main{
+                flex-direction: column;
+                align-items: center;
+                gap:20px;
+            }
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            .main{
+                display:grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 20px;
+                row-gap: 20px;
+                
+            }
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="./images/Seen_Image.jpg" alt="">
+        <img src="./images/Seen_Image.jpg" alt="">
+        <img src="./images/Seen_Image.jpg" alt="">
+    </div>
+    
+</body>
+</html>
