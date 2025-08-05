@@ -36,6 +36,11 @@ The setup of Tailwind CSS can be done in two ways-
 -Using the tailwind CSS CDN
 -Tailwind CSS Installation via Npm
 
+Usefull VsCode Extension For Tailwind
+-Tailwind CSS IntelliSense
+-WindiCSS IntelliSense
+-HeadWind
+
 
 
 
