@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <main class=" w-full max-w-7xl flex flex-col lg:flex-row item center justify-center px-5 py-5">
+    <section class="lg:w-1/2 sm:w-/2  ">
+        <div class="px-5 py-5 w-full flex-col justify-center item-center content-center">
+            <div class="flex flex-col justify-center items-center">
+                <h1 class="text-xl text-oklch(12.9% 0.042 264.695) font-semibold" >Login</h1>
+                <span class="py-3 px-3 text-gray-500">Enter your credentials to access your account</span>
+            </div>
+
+            <div class="w-3/4 flex justify-center items-center  border p-3 my-5 rounded-sm cursor-pointer mx-20 border-black">
+                <img src="./images/images.jpg" alt="" class="h-7 w-7 ">
+                <span>Login with Google</span>
+            </div>
+
+            <div class="flex justify-center item-center gap-3 mx-20 w-3/4">
+                <div class="border-b border-black flex-1 my-2"></div>
+                <span class="">Or</span>
+                <div class="border-b border-black flex-1 my-2"></div>
+            </div>
+            
+            <div class="m-10 mx-20 flex-col justify-center items-center w-3/4">
+                <form action="">
+                    <div class="flex flex-col items-start justify-center">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="email@gmail.com" class="w-full border border-black rounded p-2">
+                    </div>
+
+                    <div class="my-4 flex flex-col items-start justify-center w-full">
+                        <div class="flex w-full justify-between items-center">
+                        <label for="password">Password</label>
+                        <label for="" class="text-blue-700">Forget Password?</label>
+                        </div>
+                        <input type="password" id="password" placeholder="Password" class="w-full border border-black rounded p-2">
+                    </div>
+                    <button type="submit" class="bg-blue-500 w-full p-1 text-white">Login</button>
+                    <div class="flex justify-center items-center gap-2 my-3">
+                        <span class="text-gray-500">Don't have an account?</span>
+                        <a href="" class="text-black  font-semibold">Register</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        </section>
+
+        <section class=" lg:w-1/2  sm:w-1/2  ">
+            <img class="w-full h-full object-cover" src="./images/image1.jpg" alt="">
+        </section>
+    </main>
+</body>
+</html>
