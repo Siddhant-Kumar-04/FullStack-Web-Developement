@@ -56,15 +56,29 @@ Here we can see we have created 3 variable. The syntax works as follows:
 * After the space we give the variable name.
 * Then we put an equal symbol denoting that we want to assign a value on the RHS of equal to the variable
 * Then on the RHS of equal, we write the value we expect to get stored in the variable.
-* Here 300 is a numbers and Deadpools vs Wolverine is a text. To create a text value,we just write the text and wrap it in a pair of double quotes
+* Here 300 is a numbers and Deadpool's vs Wolverine is a text. To create a text value, we just write the text and wrap it in a pair of double quotes
 
 
 
-**What is variable name?**
+#### **What is variable name?**
 
 
 
 Every variable bucket created in the memory is allocated a unique name using which we can refer the bucket and store some value, update some value or fetch some value from the bucket This label is called as variable name
+
+
+
+#### **Note:**
+
+If we put a dedicated value inside a variable using the equals symbols, then that value is assigned to the variable. But if we just give the variable name and don't assign a value to it, then JS will automatically assign i9t a value **Undefined.**
+
+
+
+The first case is reffered as variable definition because we define the value stored in the variable also and the second one is called as variable varible declarion because we just declared the variable but didn't assign it
+
+
+
+
 
 
 
