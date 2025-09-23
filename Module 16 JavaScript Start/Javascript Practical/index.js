@@ -4,3 +4,7 @@ console.log('Hello, World!');
 // let -> Key Work  movieNName-> Variable Name  = "Deadpool vs wolvorine" -> Value
 
 let movieName = "Deadpool vs wolvorine";
+var movieDiscription = "The new Wolvorien saga";
+const moviePrice = 300;
+
+let cast;
