@@ -10,3 +10,4 @@ const moviePrice = 300;
 let cast;
 console.log("Sanket Singh", 600)
 console.log(cast)
+

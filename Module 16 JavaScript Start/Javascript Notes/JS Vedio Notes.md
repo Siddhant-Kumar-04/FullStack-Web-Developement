@@ -38,7 +38,11 @@ To store these values we can create buckets in the memory that holds these value
 
 
 
-keywords: let, var \& const. Using these 3 Keywords we can create a variable.
+**keywords: let, var \& const. Using these 3 Keywords we can create a variable.**
+
+
+
+
 
 
 
@@ -74,7 +78,27 @@ If we put a dedicated value inside a variable using the equals symbols, then tha
 
 
 
-The first case is reffered as variable definition because we define the value stored in the variable also and the second one is called as variable varible declarion because we just declared the variable but didn't assign it
+The first case is reffered as variable definition because we define the value stored in the variable also and the second one is called as variable varible declarion because we just declared the variable but didn't assign it we can update its value by just reassigning something using equal symbol.
+
+
+
+**let x=10;**
+
+**x=11;**
+
+
+
+Here the value of x was 10 initially now it has been later updated to 11.
+
+We cannot update a variable initialised by const. const doesn't allow any/ reassignment or updates. If we try to do it and run the code, it will lead to an error.
+
+
+
+Updating Values in a Variable:
+
+
+
+if we have created a variable using **let** or **var**
 
 
 
