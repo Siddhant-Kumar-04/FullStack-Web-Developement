@@ -205,6 +205,8 @@ In Js we can create comments by the following two ways:
 
 &nbsp;	var movieDesc="The new wolverine saga";
 
+
+
 * **Multiline Comment:** If we desire to write comments that go in multiple line then instead of // we can use /\*\*/. with this new symbol even if we go to a new line then we don't have manually put this as a comment and this new line will be automatically part of the comment
 
 
@@ -222,6 +224,27 @@ Example:
 
 
 So, Here/\* starts the multiline comment and \*/ ends it.
+
+
+
+
+
+#### **Datatypes in JavaScript**
+
+
+
+Datatypes is the classification of Types of data that can be stored in the memory. JavaScript supports different data types and each on eof them has its's unique use case altogether
+
+
+
+* String
+* Number
+* Boolean
+* BigInt
+* undefined
+* null
+* Symbol
+* object
 
 
 
