@@ -1,0 +1,14 @@
+Readabilty Inhances
+They can solve the problem of Inversion of Control
+In Js Promises are special type of Object that get returned immediatly when we call them
+Promis acts as a placeholder for the data we hope to get back in future
+In this promis object we can attach the functionality we want to execute ones the feature task is done.
+
+How to create a Promise ?
+Creation of Promis Object is ayncronous in nature.
+States of Promis Object.
+1) Pending - When we create a new promis object this is the default state. It represents Working Progress
+2) Fulfilled - If the operation is completed sucessfully
+3) Rejected - If operation was not successful it will go in a rejected state.
+
+State can be either fulfiled aur rejected
