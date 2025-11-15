@@ -34,9 +34,7 @@ function createPromiseWithTimeout() {
     })
 }
 let x = createPromiseWithTimeout();
-
 console.log(x);
 console.log("Promise with timeout created");
 
 
-x

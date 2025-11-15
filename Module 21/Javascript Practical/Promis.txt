@@ -12,3 +12,7 @@ States of Promis Object.
 3) Rejected - If operation was not successful it will go in a rejected state.
 
 State can be either fulfiled aur rejected
+
+1.At the Time when the constructor generatates a new promise object it also generate a pair of func called as resolve & reject.
+2.Generally the executor callback, wraps some async/ sync operation
+3. The Executor is called sync
