@@ -1,0 +1,29 @@
+Dom Manipulation
+
+One of the most fundamental use-case of JS is to able to manipulate and control DOM (Document Object Model)
+
+What is the meaning of the word DOM manipulation?
+Ans) When we say, manipulating the DOM, 
+we mean that using JS we 
+should be able to control what
+elements are being added/removed to the dom,
+they behave in terms of user interaction,
+how their look and feel is and everything 
+else related to thes HTML elements
+
+How to achieve DOM Manipulation?
+So our browser 
+provide us a lot of 
+function and objects
+using which we can control the whole DOM.
+important thing to note is that these
+function are not native to JS,
+instead they are provided by the 
+browser(which is the runtime environment).
+
+Some of the most important function are.
+1)document.getElementById
+2)document.getElementByClassName
+3)document.querySelector
+4)document.getElementByTagName
+...and More
