@@ -27,3 +27,119 @@ Some of the most important function are.
 3)document.querySelector
 4)document.getElementByTagName
 ...and More
+
+In order to understand DOM manipulation
+we will learn by
+building a samll teir maker app.
+
+What feature do we expect?
+1)One should be able to create a tier bucket and name it.
+2)Name of the bucket should be editable.
+3)One should be able to add elements which can be dragged and dropped in these buckets.
+4)We should be able to move an element from one bucket to another bucket.
+5)May be double clicking on the 
+element should bring them out of any bucket
+6)Every Element will be having an image. 
+so to add an element we need to provide URL 
+of the image directly in a form maybe
+
+How to add JS in your HTML pages?
+There are mainly two ways to insert JS in out HTML pages.
+1)To use the script tag at the
+end of the body and write all the JS there.
+2)Have a seperate JS file and 
+then link to the HTML.
+
+
+Adding JS Directly in the HTML page can lead to less readability of the code, hense this is not alwys prefered in production codebases
+
+How to select or target element using JS?
+We know that using CSS if we want to target /select
+an element we can use class selector,id selctor, tag selector ect.
+```CSS
+#tier{
+padding:5px;
+}
+
+To target an element in JS also. 
+we can take help of these tag names,id's 
+and classes. and thats the first function comes into the pricture.
+
+##A Very import global object -document
+
+Browser provides us a very important object which is globally present every where in the browser's, JS, called as document.
+This object helps us to access a dom.This object has acess to the HTML, and contains a lot of methods using which we can
+manipulate the DOm
+
+
+##document.getElementById
+
+So, as the name 
+suggest . 
+"getElementById" helps you to target a particular individual element using the id attribute of the
+HTML element 
+
+Example:
+document.getElementById("tier");
+
+The above piece of code will help you to select a element whoes id is tier
+
+If we save this element in a variable and then on that variable try to acess a value property we will get whatever has been written inside the correseponding  element.
+
+```JS
+const tierInput=document.getElementById("tier");
+console.log(tierInput);
+```
+
+Somethime we might have to fetch the text written inside the div paragraph,button etc in those cases value dones'nt help us because value is generally used to fetch the value of different input tags. if we want to fetch the text written inside an element we can use the textContent property to get and set the text of the HTML element.
+
+```JS
+const btn=document.getElementById("btn");
+console.log(btn.value);// get existing text from the button
+btn.textContent="Chutiya ahhe tumhi"// set a new text in the button
+```
+
+```HTML
+    <button id="btn">Click Me</button>
+```
+
+##Event Driven Programming
+To understant Event Driven Programming, we needs ro understand concept of event.
+Events are some action or interaction done by an external agent(may be the user). on our application. For Example clicking a button is an event, scrolling is an event, moving the mouse is an event, pressing a button on keyboard is an event and so on.
+So when we click a button an event is triggerd.
+
+So react on these action, we can write logics which will only execute when these actions are triggered. And the programming paradigm where the logic/code runs as a reaction /response to these events is called as event driven programming.
+
+##<element>.addEventListener
+
+This method 'addEventListener'  is present on almost all of the HTML elements. We can select an HTML elements first and then call this 'addEventListener' function on that element.It takes two arguments:
+
+1)Name of the event-example: click,dbclick,mouseover,scroll etc.
+2)callback function which will be executed once the event is triggerd
+
+
+```JS
+const submitBtn1 = document.getElementById('clickMeButton');
+submitBtn1.addEventListener('click', ()=> {
+    console.log('Button Clicked');
+})
+```
+
+This callback method will not be automaticlly called. it will be only called when click event happens on the submitbtn alltogether.
+The addEventListener callback has a parameter called as the event object.This event object has a lot of details about the event triggered,like on which element this was triggered, what event got triggered and so on.
+
+To get acess of the element on which the event was fired we can use the event.target property
+
+
+##preventDefaut
+Every event object passed in the event listener callback has a preventDefault method. which stops the dafault exection behavior of the event.
+For Example: a click event on a submit button inside a form, submits the form and refreshes the page. this is the default behavior. we can avoid it by using event.preventDefault
+
+
+
+
+
+
+
+
+
