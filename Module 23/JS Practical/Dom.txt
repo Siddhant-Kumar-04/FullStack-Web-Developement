@@ -168,6 +168,28 @@ const tierSection = document.getElementById('tier-list-section');
     tierSection.appendChild(newTierList);
 ```
 
+8. All of this logic is attched on the eventListener of click to the submit button.
+```JS
+const tier = document.getElementById('tier-input');
+const submitBtn1 = document.getElementById('clickMeButton');
+submitBtn1.addEventListener('click', (event)=> {
+    alert('Button Clicked');
+    event.preventDefault()
+    // const trg = event.target;
+    // alert(trg);
+    if (tier.value === '')
+    {
+        alert('Please enter a tier name');
+        return;
+    }
+    createTierList(tier.value);
+    tier.value = '';
+})
+```
+
+Note: 
+The Alert Method create a popup for us with the message we want to show to the user.
+
 
 
 

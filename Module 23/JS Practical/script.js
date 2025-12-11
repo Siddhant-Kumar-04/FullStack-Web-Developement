@@ -6,6 +6,11 @@ submitBtn1.addEventListener('click', (event)=> {
     event.preventDefault()
     // const trg = event.target;
     // alert(trg);
+    if (tier.value === '')
+    {
+        alert('Please enter a tier name');
+        return;
+    }
     createTierList(tier.value);
     tier.value = '';
 })
