@@ -4,23 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <script src="script.js" defer></script>  -->
+    <script src="script.js" defer></script> 
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <form action="">
     <h1>Youe own Tier List App</h1>
     
         <label for="tier">Tier:</label>
-        <input type="text" id="tier" name="tier" placeholder="Give the tier name....">
-        <input type="submit" value="Submit" id="submit">
+        <input type="text" id="tier-input" name="tier" placeholder="Give the tier name....">
+        
         <button id="clickMeButton" type="submit">Click Me</button>
         <h2></h2>
-    
-<script>
+    </form>
+<!-- <script>
         const submitBtn1 = document.getElementById('clickMeButton');
         submitBtn1.addEventListener('click', ()=> {
         console.log('Button Clicked');
         })
-</script>
+</script> -->
+<section id="tier-list-section">
+    <div class="tier-list">
+        <h1>Sample Tier List</h1>
+        <div class="tier-list-item">
+        </div>
+    </div>
+
+</section>
 
 </body>
 </html>

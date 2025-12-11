@@ -135,6 +135,45 @@ To get acess of the element on which the event was fired we can use the event.ta
 Every event object passed in the event listener callback has a preventDefault method. which stops the dafault exection behavior of the event.
 For Example: a click event on a submit button inside a form, submits the form and refreshes the page. this is the default behavior. we can avoid it by using event.preventDefault
 
+#document.createElement
+
+This function can help you to create brand new HTML element using JS while running the program. This function takes one argument i.e is name of the tag of the element to be craeted
+
+The attributes of the element craeted can be modified as well.
+For example. if we want to add class name to the newly created element we can use the class list property.
+
+Note: The classList property is kind of like an array of class name attached to an html element. This property can be accessed on newly created elements and already existing elements as well
+
+##htmlElement.appendChild
+We can append a given HTML element as as child of another element by using the appendChild method
+
+```JS
+newTierList.appendChild(heading);
+    newTierList.appendChild(newTierListItem);
+```
+
+1.We First create a an empty div newTierList and attach class 'tier List to it'
+2.We Create a heading and and make the text contenr of the heading equal to the tierLirName parameter passed in the function.
+3.We Create another div `newTierListItems` and Attach class Tier List Items to it
+4. But none of this will be visible as of now. why? because these elements exists in the memory and not a part of DOm tree as of now.
+5.To attach them to the DOM,we need to append them as a child of some parent.
+6.First we add heading and newTierlistItem as children of new newTierList
+```JS
+ newTierList.appendChild(heading);
+    newTierList.appendChild(newTierListItem);
+```
+7.We attach this 'newTierList' div as a child of 'tier-list-section'.
+```JS
+const tierSection = document.getElementById('tier-list-section');
+    tierSection.appendChild(newTierList);
+```
+
+
+
+
+
+
+
 
 
 
