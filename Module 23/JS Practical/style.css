@@ -14,3 +14,14 @@
     padding-right:10px;
     border-right:1px solid black;
 }
+
+.tierItem{
+    height:70px;
+    width:80px;
+    border:2px solid black;
+}
+
+.tierItem> img{
+    height:100%;
+    width:100%;
+}

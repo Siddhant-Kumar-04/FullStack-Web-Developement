@@ -28,3 +28,27 @@ function createTierList(tierlistName) {
     const tierSection = document.getElementById('tier-list-section');
     tierSection.appendChild(newTierList);
 }
+
+document.getElementById("ImageForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+    const tierUrl = document.getElementById("tier-image-input").value;
+    if (tierUrl == '') {
+        alert('Please enter an image URL');
+        return;
+    }
+    createTierImageList(tierUrl);
+    document.getElementById("tier-image-input").value = '';
+});
+
+function createTierImageList(tierUrl) {
+    
+    const newTierImage = document.createElement('div');
+    newTierImage.classList.add('tierItem');
+    newTierImage.setAttribute('draggable', 'true');
+    const image = document.createElement('img');
+    image.src = tierUrl;
+    newTierImage.appendChild(image);
+    const tierImageSection = document.getElementById('no-tier-list');
+    tierImageSection.appendChild(newTierImage);
+
+}

@@ -190,17 +190,91 @@ submitBtn1.addEventListener('click', (event)=> {
 Note: 
 The Alert Method create a popup for us with the message we want to show to the user.
 
+Now let's say we want to have a seperate form which can add initial set of no-tier elements which will be later dragged and dropped
+
+Now we can repeat the whole process just like the previous form or we can try a new approch also.
+
+#Form Submission event
+Any form when submited, emits the submit event which we can listen to and attach and event listener
+
+```HTML
+<form id="formImage">
+<label for="Item" ></label>
+<input type="text" id="item" placeholder="Give the item image url..."/>
+<input type=submit id="submitImage" value="Submit"/>
+
+```
+
+```JS
+const imageFo=document.getElementById("formImage");
+imageFo.addEventListener('submit',(event)=>{
+event.preventDefault();
+console.log("Form Submited");
+})
+```
+
+Creating Tier List Item for and Image
+
+```JS
+function createTierImageList(tierUrl) {
+    
+    const newTierImage = document.createElement('div');
+    newTierImage.classList.add('tierItem');
+    const image = document.createElement('img');
+    image.src = tierUrl;
+    newTierImage.appendChild(image);
+    const tierImageSection = document.getElementById('no-tier-list');
+    tierImageSection.appendChild(newTierImage);
+
+}
+```
+
+Now the above function created the image item container and append it to the non tier section.
+We should call this function on form submission
+
+#Uderstanding More Event like drag and dropped
+
+so drag and drop will be an event in the DOM,because it will be based on user actions.
+To make an element capable of being dragged from on epart to other we have to use the draggable attribute.This attribute defines wheather the element is dragable aur not. 
+Its an enumerated attribute meaning. In whaterver HTML tag we are defining this attribute we have to manually give its a "true" or "false" value as a string.
+
+According to MDN:
+    Warning: This attribute is enumerated and not Boolean. A value of true or false is mandatory, and shorthand like '<img draggable> is forbidden'.The correct usage is 
+    <img draggable="false">
 
 
+##Where can we add this dragable in our code.
 
+```JS
+<section id="no-tier-list">
+    <div class="tierItem">
+        <img src="https://plus.unsplash.com/premium_photo-1737182592549-0c83f93e2903?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bHV4dXJ5JTIwdmVoaWNsZXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+    </div>
+</section>
+```
 
+Inside the non-tier-section we are having a lot of div with class item-conatiner.These divs are going to contain images of our tier-items which needs to be made draggable. SO ideally these divs should be given the dragable="true" attribute
 
+<section id="no-tier-list">
+    <div class="tierItem" draggable=true>
+        <img src="https://plus.unsplash.com/premium_photo-1737182592549-0c83f93e2903?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bHV4dXJ5JTIwdmVoaWNsZXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+    </div>
+</section>
 
+But these item-container divs are craeting on the go using JS , whenever the user fills the form with an image url.
+That means the newly created divs(Which are made using JS) should also contain these attributes
 
+##setAttribute
+This function is avilable on HTML element, to set a particular attribute whith a value. It takes two arguments
+1)attribute name:
+2)atttribute value
+```JS
+setAttribute(draggable,true)
+```
 
+So we can use this setAttribute function to set these dragable values
 
-
-
-
+The div with class 'item-container' will be dragged so we need to add event listener to this div.
+If we want to add event listener to these div, we need to select them as well.As all of them have got a common class, and we need to attach an event listner to all of these divs, we can use getElementByClassName
 
 
