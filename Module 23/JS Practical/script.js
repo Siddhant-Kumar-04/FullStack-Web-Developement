@@ -1,5 +1,6 @@
 
 const tier = document.getElementById('tier-input');
+
 const submitBtn1 = document.getElementById('clickMeButton');
 submitBtn1.addEventListener('click', (event)=> {
     alert('Button Clicked');
@@ -24,9 +25,11 @@ function createTierList(tierlistName) {
     newTierListItem.classList.add('tier-list-item');
     newTierList.appendChild(heading);
     newTierList.appendChild(newTierListItem);
-
+     
     const tierSection = document.getElementById('tier-list-section');
     tierSection.appendChild(newTierList);
+    setUpDropZone(newTierList); 
+   
 }
 
 document.getElementById("ImageForm").addEventListener("submit", function (event) {
@@ -50,5 +53,46 @@ function createTierImageList(tierUrl) {
     newTierImage.appendChild(image);
     const tierImageSection = document.getElementById('no-tier-list');
     tierImageSection.appendChild(newTierImage);
+    setUpItemConatainer(newTierImage);
 
+
+}
+let currentDraggedItem;
+const itemContent = document.getElementsByClassName('tierItem');
+for (const itemContents of itemContent) {
+    setUpItemConatainer(itemContents);
+}
+function setUpItemConatainer(itemContainer) {
+    
+    console.log("Setting up item container");
+    itemContainer.addEventListener('dragstart', () => {
+        // currentDraggedItem = event.target; //To get a element to whome we are dragging
+        // console.log('Drag Start:', currentDraggedItem);
+        //Note: If we want to get a parent element of the element we are dragging then we can use parentNode property
+        currentDraggedItem = event.target.parentNode;
+        console.log('Drag Start:', currentDraggedItem);
+    });
+    
+}
+
+//DragSDrop Functinality for Tier Lists
+// const tierlistClass=document.querySelectorAll('.tier-list');
+// tierlistClass.forEach((tierlist) => {
+//     setUpDropZone(tierlist);
+// })
+
+function setUpDropZone(tierlist) {
+
+    tierlist.addEventListener('drop', (event) => { 
+        event.preventDefault();  //to drop the default behavior of the browser 
+        console.log('Drop Event on Tier List');
+        
+    });
+
+    tierlist.addEventListener('dragover', (event) => {
+        console.log("Dragged Over on Tier List");
+        event.target.appendChild(currentDraggedItem);
+    }); 
+    
+    
 }

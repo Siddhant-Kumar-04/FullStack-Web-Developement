@@ -277,4 +277,57 @@ So we can use this setAttribute function to set these dragable values
 The div with class 'item-container' will be dragged so we need to add event listener to this div.
 If we want to add event listener to these div, we need to select them as well.As all of them have got a common class, and we need to attach an event listner to all of these divs, we can use getElementByClassName
 
+##document.getElementByClassName
+This function takes the name of the class we want to select and then return us an array of all those elements which have got the same class.
+
+This method return us as HTMLcollection list,so normal array functions are not gonna work on it. And we need to iterate on all the element on this list setup eventListener. So we can use the `for of' loop
+```JS
+for (const itemContents of itemContent) {
+    setUpItemConatainer(itemContents);
+}
+function setUpItemContainer(itemContainer)
+{
+    itemContainer.addEventListener("dragstart",()=>{
+        console.log("Hello I have implemented Drag start");
+    })
+}
+
+```
+In HTML elements we have an event called as dragstart which is fired when we start dragging an element .
+
+###What to do when someone starts dragging an item>
+
+We can store the item being dragged in a varaible so tat we can keep track of it.
+
+Because when we start dragging we will be putting the cursor on an image, we need to also get parent of the image, and to get parent of any HTML element we can use the parentNode property
+
+```JS
+let currentdraggedItem
+function setUpItemContainerDrg(itemConatiner){
+itemConatiner.addEventListener("dragstart",(event)=>)
+{
+ currentDraggedItem = event.target.parentNode;
+    console.log('Drag Start:', currentDraggedItem);
+}
+}
+```
+
+To target any element by id or class or something else, we don't just have option of `getElementByClassName` or` getElementById`. We can use the the method `querySelectorAll`
+
+##document.querySelectorAll
+It isn kind of a generic method. In this method we can give css like selector and it will select those element
+
+Example 1:
+```JS
+document.querySelectorAll("#some_Id");
+```
+
+This code will select an element with id some_id
+
+Example 1:
+```JS
+document.querySelectorAll("some_class");
+```
+
+This code will select an element with class some_class
 
