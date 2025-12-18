@@ -331,3 +331,29 @@ document.querySelectorAll("some_class");
 
 This code will select an element with class some_class
 
+##Handling drop
+So in the browser we have a drop event,The drop event is fired when an element or text selection is dropped on valid drop target.To ensure that the drop event alwys fires as expected, you should alwys include a preventDefault() call in the part of your code hich handles the dragover event 
+
+The `degaover` event is fired when a element or text selection is being dragged over a valid drop target (ever few hundred miliseconds)
+
+```JS
+function setUpDropZone(tierlist) {
+
+    tierlist.addEventListener('drop', (event) => { 
+        event.preventDefault();  //to drop the default behavior of the browser 
+        console.log('Drop Event on Tier List');
+       // event.target.appendChild(currentDraggedItem);
+        
+    });
+
+    tierlist.addEventListener('dragover', (event) => {
+        console.log("Dragged Over on Tier List");
+        event.target.appendChild(currentDraggedItem);
+    }); 
+    
+    
+}
+```
+
+
+

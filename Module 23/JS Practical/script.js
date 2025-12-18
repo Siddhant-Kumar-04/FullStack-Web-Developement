@@ -28,7 +28,7 @@ function createTierList(tierlistName) {
      
     const tierSection = document.getElementById('tier-list-section');
     tierSection.appendChild(newTierList);
-    setUpDropZone(newTierList); 
+    setUpDropZone(newTierListItem); 
    
 }
 
@@ -48,6 +48,7 @@ function createTierImageList(tierUrl) {
     const newTierImage = document.createElement('div');
     newTierImage.classList.add('tierItem');
     newTierImage.setAttribute('draggable', 'true');
+    setUpItemConatainer(newTierImage);
     const image = document.createElement('img');
     image.src = tierUrl;
     newTierImage.appendChild(image);
@@ -75,7 +76,7 @@ function setUpItemConatainer(itemContainer) {
     
 }
 
-//DragSDrop Functinality for Tier Lists
+// DragSDrop Functinality for Tier Lists
 // const tierlistClass=document.querySelectorAll('.tier-list');
 // tierlistClass.forEach((tierlist) => {
 //     setUpDropZone(tierlist);
@@ -84,14 +85,21 @@ function setUpItemConatainer(itemContainer) {
 function setUpDropZone(tierlist) {
 
     tierlist.addEventListener('drop', (event) => { 
-        event.preventDefault();  //to drop the default behavior of the browser 
+        // event.preventDefault();  //to drop the default behavior of the browser 
         console.log('Drop Event on Tier List');
+       event.target.appendChild(currentDraggedItem);
         
     });
 
-    tierlist.addEventListener('dragover', (event) => {
-        console.log("Dragged Over on Tier List");
-        event.target.appendChild(currentDraggedItem);
+    tierlist.addEventListener('dragover', function(event) {
+        // console.log("Dragged Over on Tier List");
+        //event.target.appendChild(currentDraggedItem);
+        event.preventDefault();
+        console.log("event comming on",event)
+        if (this === currentDraggedItem.parentNode)
+        {
+            appendChild(currentDraggedItem);
+        }
     }); 
     
     
