@@ -354,6 +354,53 @@ function setUpDropZone(tierlist) {
     
 }
 ```
+There is one problem here that the event object in the event listener of dragover is the drga evenet of the image Item Container, so current we are tring to insert currentDraggedItem which is the parent of Image item inside the itself,and that is not possible, we cannot add parent of child as its child
+
+So here we need to access the tier list in which `dragover` is happeing
+    To get it we can chnage the arrow function to normal function expression and use the this keyword to get acess to the tier list as it is the call setUpItemConatainer
+
+```JS 
+function setUpDropZone(tierlist) {
+
+    tierlist.addEventListener('drop', (event) => { 
+        // event.preventDefault();  //to drop the default behavior of the browser 
+        console.log('Drop Event on Tier List');
+       event.target.appendChild(currentDraggedItem);
+        
+    });
+
+    tierlist.addEventListener('dragover', function(event) {
+        // console.log("Dragged Over on Tier List");
+        //event.target.appendChild(currentDraggedItem);
+        event.preventDefault();
+        console.log("event comming on",event)
+        if (this === currentDraggedItem.parentNode)
+        {
+            appendChild(currentDraggedItem);
+        }
+    }); 
+    
+    
+}
+
+````
+Apart from this there is one last change expected that, when we add a new image we should set it up for dragstart event.
+
+```JS
+function createTierImageList(tierUrl) {
+    
+    const newTierImage = document.createElement('div');
+    newTierImage.classList.add('tierItem');
+    newTierImage.setAttribute('draggable', 'true');
+    setUpItemConatainer(newTierImage);
+    const image = document.createElement('img');
+    image.src = tierUrl;
+    newTierImage.appendChild(image);
+    const tierImageSection = document.getElementById('no-tier-list');
+    tierImageSection.appendChild(newTierImage);
+    setUpItemConatainer(newTierImage);
 
 
+}
+```
 

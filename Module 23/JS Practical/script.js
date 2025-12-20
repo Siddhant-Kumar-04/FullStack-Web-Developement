@@ -65,6 +65,7 @@ for (const itemContents of itemContent) {
 }
 function setUpItemConatainer(itemContainer) {
     
+    
     console.log("Setting up item container");
     itemContainer.addEventListener('dragstart', () => {
         // currentDraggedItem = event.target; //To get a element to whome we are dragging
@@ -73,6 +74,12 @@ function setUpItemConatainer(itemContainer) {
         currentDraggedItem = event.target.parentNode;
         console.log('Drag Start:', currentDraggedItem);
     });
+
+    itemContainer.addEventListener('dblclick', () => {
+        const parnNode = event.target.parentNode;
+        const nonTierSection = document.getElementById('no-tier-list');
+        nonTierSection.appendChild(parnNode);
+    })
     
 }
 
@@ -101,6 +108,12 @@ function setUpDropZone(tierlist) {
             appendChild(currentDraggedItem);
         }
     }); 
-    
-    
+  
 }
+
+// function setUpRemoveButton(tierItem) { 
+//     tierItem.addEventListener('dbclick', () => {
+        
+//     })
+// }
+
