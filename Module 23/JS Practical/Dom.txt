@@ -14,7 +14,7 @@ else related to thes HTML elements
 How to achieve DOM Manipulation?
 So our browser 
 provide us a lot of 
-function and objects
+function and objects 
 using which we can control the whole DOM.
 important thing to note is that these
 function are not native to JS,
@@ -403,4 +403,182 @@ function createTierImageList(tierUrl) {
 
 }
 ```
+
+Browser Object Model(BOM)
+
+Browser object model, allows JS running inside the browser to acess a lot of browser related feature like
+the URL bar, reload button,window frame etc.
+in this model we have one object called called as window object which is a global object available across the JS running in the browser.We can acess the following using this window object.
+1)Navigator
+2)Location
+3)History
+4)Screen
+5)URL bar
+6)Relaoder
+7)and more....
+
+#Properties & Method of window Object
+###window.document 
+Provides you acess to the document object of our DOM
+###window.Location
+It returns the location object which as a lot of properties related to our current URL present in the address bar. For Example. if we want the complete adress writeen in the adress bar we can use 
+`window.location.href` and it will return us the adress. If we want to move to a new address then we use some thing like this
+
+window.location.href="https://www.yahoo.com"
+
+The above code will will refresh your current page and open yahoo.com
+
+##Window.open
+We can pass a url as an argument to it and this will open that url page in the new tab
+
+##Window.close
+This will close the current tab open.
+
+#Timer
+
+Window object also contains important timer method like setTimeout and setInterval
+
+####window.addEventListener
+We can add event listener to window object as well.
+
+##window.alert
+This creates an alert popup on the current window
+
+##Window.confirm
+This also creates a new pop, but this popup has a cancel or ok button, if the user press the ok button then this method returns true else it returns false
+
+###Some important usecases
+
+Let's say we want to acess the users coordinates of the current location, we can use the window object's navigator property
+
+```JS
+window.navigator.geoloaction.getCurrentPosition((data)=>{
+    console.log(data); //This will return us the cordinates
+})
+```
+
+##Lets say we want to acess web cam of the user.we can again use the window object 
+```JS 
+window.navigator.mediaDevices.enumerateDevices().then((res,reject)=>{
+    console.log(res);
+})
+
+```
+And there are more use cases of this window object.like acessing browser storage, to acess clipboard, to acess GPU
+
+###Note
+If we try to access this in the browser console it returns the window object only,showing the scrope in which all this is working if of the window object.
+
+
+###Events In JS
+
+We have 3 main event concepts which are very usefull to understand the internal working of events.
+1)Event Bubbling
+2)Event Capture
+3)Event Propagation
+
+#Event Bubbling
+Event bubbling is a concept in which, if we trigger an event on any child, then that event is also tracked by ancestors of the correseponding child. for example.
+<main>
+<section>
+</section>
+<div>
+<form id="form">
+<input id="inp" type="text"/>
+</form>
+<Button  id="btn">
+Click Me 
+</button>
+</div>
+</section>
+</main>
+
+Here if we attach a click event listener to the button then also start tracking click event on the parent div,grandparent section and great grand parent main then the click event will also be tracked by them.
+```JS
+document.getElementById("btn").addEventListener("click",(event)=>{
+    console.log("Button clicked");
+    event.stopPropagation(); // if we want to stop event propagation towards its parents
+})
+
+document.querySelector("main").addEventListener("click",()=>{
+    console.log("Main clicked");
+})
+
+document.querySelector("section").addEventListener("click",()=>{
+    console.log("Main clicked");
+})
+
+document.querySelector("div").addEventListener("click",()=>{
+    console.log("Main clicked");
+})
+```
+
+if we click on the button the output we will get is.
+```
+"button clicked"
+"event reached div"
+"event reached section"
+"evenet reached main"
+```
+
+##Can we stop event bubbling.?
+Yes, we can do it by using `event.stopPropagation(); so on whatever element we call event.stopPropagation,right on that element event bubbling stops.
+
+#Event Delegation
+
+This is a technique in which instead of starting from child to the parent everybody listens for the event, we just delegate this task to the parent only to listen to the corresponding fired event.
+
+document.querySelector("main").addEventListener("click"()=>{
+    console.log("event reached main");
+})
+
+Here instead of the whole, we selected one of the ancestor and then, added the event listener to them.
+
+##Event Capturing
+The addEventListener method takes a third argument called as `useCapture` which is a boolean argument(default flase).This argument enables event capturing for us.What is event capturing.?
+
+Event capturing is a mechanism in which event on the parent is tracked first then event on any nested child is tracked
+
+So her if the user clicks on the button then,first the click event of main is triggerd then section then div then button. and we can stop this capturing anywhere in between using `event.stopPropagation().`
+
+```JS
+document.getElementById("btn").addEventListener("click",(event)=>{
+    console.log("Button clicked");
+    event.stopPropagation(); // if we want to stop event propagation towards its parents
+},true)
+
+document.querySelector("main").addEventListener("click",()=>{
+    console.log("Main clicked");
+},true)
+
+document.querySelector("section").addEventListener("click",()=>{
+    console.log("Main clicked");
+},true)
+
+document.querySelector("div").addEventListener("click",()=>{
+    console.log("Main clicked");
+},true)
+```
+
+So the third parameter is passed as true enabling event capture.
+So if we enables useCapture on only a few elements then only those will be tracked with their capturing phase, else everyone will work with bubbling
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
