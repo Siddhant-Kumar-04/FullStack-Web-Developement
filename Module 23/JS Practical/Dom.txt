@@ -545,11 +545,11 @@ So her if the user clicks on the button then,first the click event of main is tr
 document.getElementById("btn").addEventListener("click",(event)=>{
     console.log("Button clicked");
     event.stopPropagation(); // if we want to stop event propagation towards its parents
-},true)
+},true);
 
 document.querySelector("main").addEventListener("click",()=>{
     console.log("Main clicked");
-},true)
+},true);
 
 document.querySelector("section").addEventListener("click",()=>{
     console.log("Main clicked");
