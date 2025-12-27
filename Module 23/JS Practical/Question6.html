@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Image Carousel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        .carousel {
+            width: 700px;
+            margin: 40px auto;
+            position: relative;
+        }
+
+        .carousel img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        .btn:hover {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Simple Image Carousel</h2>
+
+    <div class="carousel">
+        <button class="btn prev" onclick="prevImage()">❮</button>
+        <img id="carouselImage" src="../images/images1.jpg" alt="Carousel Image">
+        <button class="btn next" onclick="nextImage()">❯ </button>
+    </div>
+
+    <script>
+        const images = [
+            "../images/images1.jpg",
+            "../images/image2.jpg",
+            "../images/image3.jpg"
+        ];
+
+        let currentIndex = 0;
+        const carouselImage = document.getElementById("carouselImage");
+
+        function showImage(index) {
+            carouselImage.src = images[index];
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % images.length;  
+            showImage(currentIndex);
+        }   
+
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            showImage(currentIndex);
+        }
+    </script>
+
+</body>
+
+</html>

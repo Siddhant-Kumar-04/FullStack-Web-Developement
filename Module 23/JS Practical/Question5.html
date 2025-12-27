@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="submitBtn">Click Me Alert</button>
+    <script>
+        
+
+        document.getElementById("submitBtn").addEventListener("click", function() {
+            const btn1 = document.getElementById("submitBtn");
+            btn1.style.color = "red";
+            btn1.style.backgroundColor="Yellow";
+            btn1.style.setProperty("font-size", "20px");
+            alert("Button Clicked!");
+        });
+    </script>
+</body>
+</html>
