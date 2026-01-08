@@ -1,0 +1,20 @@
+Lets Discuss the Project Structure
+
+1)package.json: 
+
+This is indeed the most important file of the whole project,why?It contains metadata about your project.It tells important details of the project like name of the project,version of the project(self configuarartion), It also tells the dependencies on which our project has,apart form that a couple of scripts are mentioned which are designated to do a particular job.
+For example: `dev` script written is executed when we execute `npm run dev`.
+
+2)node_modules: This folder contains the downloaded dependency codes.
+For example: we have eslint,react as dependency of the project so we need to download them, so node_modules folder is the place where we download them.
+
+3)package-lock.json: Now the dependencies we install also have inner dependencies,so this file keeps the version details of all the dependencies and inner dependency.So if we loose `node_modules` we can download the same version of everything because of `package-lock.json`
+
+4)gitignore: This file contains all the files and folder we don't want to upload on GitHub once we upload the project on gitHub.
+
+5) eslintrc:This file keeps the eslint configuration.
+6)vite.config.js: This file keeps the vite configuration
+7)public:Any static file like,pdf,images etc goes here.
+8)src:Your actual react code is present.
+
+
